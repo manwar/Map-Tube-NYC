@@ -1,0 +1,34 @@
+<tube>
+  <stations>
+    <station id="EA01" name="207th Street"       line="IND Eighth Avenue" link="EA02"/>
+    <station id="EA02" name="Dyckman Street"     line="IND Eighth Avenue" link="EA03,EA01"/>
+    <station id="EA03" name="190th Street"       line="IND Eighth Avenue" link="EA04,EA02"/>
+    <station id="EA04" name="181th Street"       line="IND Eighth Avenue" link="EA05,EA03"/>
+    <station id="EA05" name="175th Street"       line="IND Eighth Avenue" link="EA06,EA04"/>
+    <station id="EA06" name="168th Street"       line="IND Eighth Avenue" link="EA07,EA05"/>
+    <station id="EA07" name="163rd Street"       line="IND Eighth Avenue" link="EA08,EA06"/>
+    <station id="EA08" name="155th Street"       line="IND Eighth Avenue" link="EA09,EA07"/>
+    <station id="EA09" name="145th Street"       line="IND Eighth Avenue" link="EA10,EA08"/>
+    <station id="EA10" name="135th Street"       line="IND Eighth Avenue" link="EA11,EA09"/>
+    <station id="EA11" name="125th Street"       line="IND Eighth Avenue" link="EA12,EA10"/>
+    <station id="EA12" name="116th Street"       line="IND Eighth Avenue" link="EA13,EA11"/>
+    <station id="EA13" name="110th Street"       line="IND Eighth Avenue" link="EA14,EA12"/>
+    <station id="EA14" name="103rd Street"       line="IND Eighth Avenue" link="EA15,EA13"/>
+    <station id="EA15" name="96th Street"        line="IND Eighth Avenue" link="EA16,EA14"/>
+    <station id="EA16" name="86th Street"        line="IND Eighth Avenue" link="EA17,EA15"/>
+    <station id="EA17" name="81st Street"        line="IND Eighth Avenue" link="EA18,EA16"/>
+    <station id="EA18" name="72nd Street"        line="IND Eighth Avenue" link="EA19,EA17"/>
+    <station id="EA19" name="59th Street"        line="IND Eighth Avenue" link="EA20,EA18"/>
+    <station id="EA20" name="50th Street"        line="IND Eighth Avenue" link="EA21,EA19"/>
+    <station id="EA21" name="42nd Street"        line="IND Eighth Avenue" link="EA22,EA20"/>
+    <station id="EA22" name="34th Street"        line="IND Eighth Avenue" link="EA23,EA21"/>
+    <station id="EA23" name="23rd Street"        line="IND Eighth Avenue" link="EA24,EA22"/>
+    <station id="EA24" name="14th Street"        line="IND Eighth Avenue" link="EA25,EA23"/>
+    <station id="EA25" name="West Fourth Street" line="IND Eighth Avenue" link="EA26,EA24"/>
+    <station id="EA26" name="Spring Street"      line="IND Eighth Avenue" link="EA27,EA25"/>
+    <station id="EA27" name="Canal Street"       line="IND Eighth Avenue" link="EA28,EA26"/>
+    <station id="EA28" name="Chambers Street"    line="IND Eighth Avenue" link="EA29,EA27"/>
+    <station id="EA29" name="Fulton Street"      line="IND Eighth Avenue" link="EA30,EA28"/>
+    <station id="EA30" name="High Street"        line="IND Eighth Avenue" link="EA29"/>
+  </stations>
+</tube>
