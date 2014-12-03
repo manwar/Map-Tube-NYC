@@ -1,5 +1,5 @@
 use strict; use warnings;
-use Test::More tests => 7;
+use Test::More tests => 8;
 use Map::Tube::NYC;
 
 my $subway = Map::Tube::NYC->new;
@@ -18,3 +18,4 @@ Route 4|Canal Street|High Street    |Canal Street (IND Eighth Avenue), Chambers 
 Route 5|   Canal Street|High Street|Canal Street (IND Eighth Avenue), Chambers Street (IND Eighth Avenue), Fulton Street (IND Eighth Avenue), High Street (IND Eighth Avenue)
 Route 6|Canal Street|    High Street|Canal Street (IND Eighth Avenue), Chambers Street (IND Eighth Avenue), Fulton Street (IND Eighth Avenue), High Street (IND Eighth Avenue)
 Route 7|Canal Street    |High Street    |Canal Street (IND Eighth Avenue), Chambers Street (IND Eighth Avenue), Fulton Street (IND Eighth Avenue), High Street (IND Eighth Avenue)
+Route 8|canal Street    |high Street    |Canal Street (IND Eighth Avenue), Chambers Street (IND Eighth Avenue), Fulton Street (IND Eighth Avenue), High Street (IND Eighth Avenue)

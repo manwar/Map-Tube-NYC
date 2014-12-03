@@ -1,6 +1,6 @@
 package Map::Tube::NYC;
 
-$Map::Tube::NYC::VERSION = '0.01';
+$Map::Tube::NYC::VERSION = '0.02';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Map::Tube::NYC - Interface to the New York City Subway.
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 

@@ -1,4 +1,9 @@
 Revision history for Map-Tube-NYC
 
+0.02  Wed Dec 03 21:37:10 2014
+      - Upgraded to use Map::Tube v2.31 as it brings in new fix and feature.
+      - Added test case for case insensitive station name.
+      - Removed SIGNATURE file.
+
 0.01  Sun Nov 30 11:17:01 2014
       - First version, released.
