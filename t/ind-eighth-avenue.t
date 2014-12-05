@@ -16,14 +16,11 @@ sub _expected_route {
     foreach my $name (split /\,/,$route) {
         push @$nodes, $subway->get_node_by_name($name);
     }
-    return Map::Tube::Route->new({ nodes => $nodes });
-}
 
-while (<DATA>) {
-    chomp;
-    next if /^\#/;
-    my ($description, $from, $to, $expected) = split /\|/;
-    is($subway->get_shortest_route($from, $to), $expected, $description);
+    return Map::Tube::Route->new(
+       { from  => $nodes->[0],
+         to    => $nodes->[-1],
+         nodes => $nodes });
 }
 
 __DATA__

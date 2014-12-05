@@ -1,5 +1,9 @@
 Revision history for Map-Tube-NYC
 
+0.05  Fri Dec 05 20:43:10 2014
+      - Upgraded to use Map::Tube v2.33 as it brings in new fix and feature.
+      - Updated unit test to reflect the changes in Map::Tube v2.33.
+
 0.04  Fri Dec 05 11:00:10 2014
       - Updated the description of method get_shortest_route().
 
