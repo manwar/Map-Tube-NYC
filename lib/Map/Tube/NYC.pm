@@ -1,6 +1,6 @@
 package Map::Tube::NYC;
 
-$Map::Tube::NYC::VERSION = '0.05';
+$Map::Tube::NYC::VERSION = '0.06';
 
 =head1 NAME
 
@@ -8,7 +8,7 @@ Map::Tube::NYC - Interface to the New York City Subway.
 
 =head1 VERSION
 
-Version 0.05
+Version 0.06
 
 =cut
 
@@ -30,54 +30,6 @@ given  nodes.It covers IND Eighth Avenue Line only now.I will be adding remainin
 routes very soon.
 
 For more information about New York City Subway, L<click here|http://en.wikipedia.org/wiki/New_York_City_Subway_map>.
-
-=head1 STATIONS
-
-    +---------------------------------------------------------------------------------------------+
-    | Junctions                                                                                   |
-    +--------------------+-------------------------------------+----------------------------------+
-    | Station            | Line                                | Connected to                     |
-    +--------------------+-------------------------------------+----------------------------------+
-    | 168th Street       | IND Eighth Avenue, Seventh Avenue   | 175th Street, 168th Street       |
-    | 145th Street       | IND Eighth Avenue, Concourse        | 155th Street, 145th Street       |
-    | 59th Street        | IND Eighth Avenue, Seventh Avenue   | 72nd Street, 59th Street         |
-    | 50th Street        | IND Eighth Avenue, Queens Boulevard | 59th Street, 50th Street         |
-    | 42nd Street        | IND Eighth Avenue, Seventh Avenue,  | 50th Street, 42nd Street         |
-    |                    | Flushing, Broadway                  |                                  |
-    | 14th Street        | IND Eighth Avenue, Canarsie         | 23rd Street, West Fourth Street  |
-    | West Fourth Street | IND Eighth Avenue, Sixth Avenue     | 14th Street, Spring Street       |
-    | Fulton Street      | IND Eighth Avenue, Seventh Avenue   | Chambers Street, High Street     |
-    |                    | Nassau Street, Lexington Avenue     |                                  |
-    +--------------------+-------------------------------------+----------------------------------+
-
-    +---------------------------------------------------------+
-    | Line: IND Eighth Avenue                                 |
-    +---------------------+-----------------------------------+
-    | Station             | Connected to                      |
-    +---------------------+-----------------------------------+
-    | 207th Street        |  Dyckman Street                   |
-    | Dyckman Street      |  207th Street, Dyckman Street     |
-    | 190th Street        |  Dyckman Street, 190th Street     |
-    | 181th Street        |  190th Street, 181st Street       |
-    | 175th Street        |  181st Street, 175th Street       |
-    | 163rd Street        |  168th Street, 163rd Street       |
-    | 155th Street        |  163rd Street, 155th Street       |
-    | 135th Street        |  145th Street, 135th Street       |
-    | 125th Street        |  135th Street, 125th Street       |
-    | 116th Street        |  125th Street, 116th Street       |
-    | 110th Street        |  116th Street, 110th Street       |
-    | 103rd Street        |  110th Street, 103rd Street       |
-    | 96th Street         |  103rd Street, 96th Street        |
-    | 86th Street         |  96th Street, 86th Street         |
-    | 81st Street         |  86th Street, 81st Street         |
-    | 72nd Street         |  81st Street, 72nd Street         |
-    | 34th Street         |  42nd Street, 23rd Street         |
-    | 23rd Street         |  34th Street, 14th Street         |
-    | Spring Street       |  West Fourth Street, Canal Street |
-    | Canal Street        |  Spring Street, Chambers Street   |
-    | Chambers Street     |  Canal Street, Fulton Street      |
-    | High Street         |  Fulton Street                    |
-    +---------------------+-----------------------------------+
 
 =head1 CONSTRUCTOR
 
