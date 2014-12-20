@@ -3,7 +3,7 @@
     <station id="EA01" name="207th Street"       line="IND Eighth Avenue" link="EA02"/>
     <station id="EA02" name="Dyckman Street"     line="IND Eighth Avenue" link="EA03,EA01"/>
     <station id="EA03" name="190th Street"       line="IND Eighth Avenue" link="EA04,EA02"/>
-    <station id="EA04" name="181th Street"       line="IND Eighth Avenue" link="EA05,EA03"/>
+    <station id="EA04" name="181st Street"       line="IND Eighth Avenue" link="EA05,EA03"/>
     <station id="EA05" name="175th Street"       line="IND Eighth Avenue" link="EA06,EA04"/>
     <station id="EA06" name="168th Street"       line="IND Eighth Avenue" link="EA07,EA05"/>
     <station id="EA07" name="163rd Street"       line="IND Eighth Avenue" link="EA08,EA06"/>

@@ -1,6 +1,7 @@
 Changes
 share/nyc-map.xml
 lib/Map/Tube/NYC.pm
+lib/Map/Tube/NYC/Line/INDEighthAvenue.pm
 Makefile.PL
 MANIFEST
 MANIFEST.SKIP

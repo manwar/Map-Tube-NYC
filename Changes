@@ -1,5 +1,10 @@
 Revision history for Map-Tube-NYC
 
+0.07  Sat Dec 20 09:45:00 2014
+      - Upgraded to use Map::Tube v2.46.
+      - Added package to list subway stations for "IND Eighth Avenue".
+      - Updated pod document for Map::Tube::NYC about the above changes.
+
 0.06  Sat Dec 06 22:52:11 2014
       - Upgraded to use Map::Tube v2.34.
       - Removed stations name from the pod document as it is becoming too noisy.

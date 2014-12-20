@@ -1,86 +1,55 @@
-package Map::Tube::NYC;
+package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::VERSION = '0.07';
+$Map::Tube::NYC::Line::INDEighrhAvenue::VERSION = '0.07';
 
 =head1 NAME
 
-Map::Tube::NYC - Interface to the New York City Subway.
+Map::Tube::NYC::Line::INDEighthAvenue - New York Metro IND Eighth Avenue Line stations.
 
 =head1 VERSION
 
 Version 0.07
 
-=cut
-
-use 5.006;
-use Data::Dumper;
-use File::Share ':all';
-
-use Moo;
-use namespace::clean;
-
-has xml => (is => 'ro', default => sub { return dist_file('Map-Tube-NYC', 'nyc-map.xml') });
-
-with 'Map::Tube';
-
-=encoding utf8
-
 =head1 DESCRIPTION
 
-It currently provides functionality to find the shortest  route between  the  two
-given  nodes. It covers the following subway lines just yet:
+New York Metro IND Eighth Avenue Line stations.
 
-=over 2
-
-=item * L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>
-
-=back
-
-=head1 TODO (Subway Lines)
-
-=over 2
-
-=item * IND Sixth Avenue Line
-
-=item * IND Crosstown Line
-
-=item * BMT Canarsie Line
-
-=item * BMT Nassau Street Line
-
-=item * BMT Broadway Line
-
-=item * IRT Broadway – Seventh Avenue Line
-
-=item * IRT Lexington Avenue Line
-
-=item * IRT Flushing Line
-
-=back
-
-=head1 CONSTRUCTOR
-
-The constructor DO NOT expects parameters.This setup the default node definitions.
-
-    use strict; use warnings;
-    use Map::Tube::NYC;
-
-    my $subway = Map::Tube::NYC->new;
-
-=head1 METHODS
-
-=head2 get_shortest_route($from, $to)
-
-Expects 'from' and 'to' station name and returns an object of type L<Map::Tube::Route>.
-On error it returns an object of type L<Map::Tube::Exception>.
-
-    use strict; use warnings;
-    use Map::Tube::NYC;
-
-    my $subway = Map::Tube::NYC->new;
-    my $route  = $subway->get_shortest_route('Canal Street', 'High Street');
-
-    print "Route: $route\n";;
+    +---------------------+-----------------------------------+
+    |                     |                                   |
+    | Station Name        | Connected To                      |
+    |                     |                                   |
+    +---------------------+-----------------------------------+
+    | 207th Street        | Dyckman Street                    |
+    | Dyckman Street      | 207th Street, 190th Street        |
+    | 190th Street        | Dyckman Street, 181st Street      |
+    | 181st Street        | 190th Street, 175th Street        |
+    | 175th Street        | 181st Street, 168th Street        |
+    | 168th Street        | 175th Street, 163rd Street        |
+    | 163rd Street        | 168td Street, 155th Street        |
+    | 155th Street        | 163rd Street, 145th Street        |
+    | 145th Street        | 155th Street, 135th Street        |
+    | 135th Street        | 145th Street, 125th Street        |
+    | 125th Street        | 135th Street, 116th Street        |
+    | 116th Street        | 125th Street, 110th Street        |
+    | 110th Street        | 116th Street, 103rd Street        |
+    | 103rd Street        | 110th Street, 96th Street         |
+    | 96th Street         | 103rd Street, 86th Street         |
+    | 86th Street         | 96th Street, 81st Street          |
+    | 81st Street         | 86th Street, 72nd Street          |
+    | 72nd Street         | 81st Street, 59th Street          |
+    | 59th Street         | 72nd Street, 50th Street          |
+    | 50th Street         | 59th Street, 42nd Street          |
+    | 42nd Street         | 50th Street, 34th Street          |
+    | 34th Street         | 42nd Street, 23rd Street          |
+    | 23rd Street         | 34th Street, 14th Street          |
+    | 14th Street         | 23rd Street, West Fourth Street   |
+    | West Fourth Street  | 14th Street, Spring Street        |
+    | Spring Street       | West Fourth Street, Canal Street  |
+    | Canal Street        | Spring Street, Chambers Street    |
+    | Chambers Street     | Canal Street, Fulton Street       |
+    | Fulton Street       | Chambers Street, High Street      |
+    | High Street         | Fulton Street                     |
+    +---------------------+-----------------------------------+
 
 =head1 AUTHOR
 
@@ -101,7 +70,7 @@ bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Map::Tube::NYC
+    perldoc Map::Tube::NYC::Line::INDEighthAvenue
 
 You can also look for information at:
 
@@ -165,4 +134,4 @@ OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Map::Tube::NYC
+1; # End of Map::Tube::NYC::Line::INDEighthAvenue
