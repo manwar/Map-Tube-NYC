@@ -1,6 +1,9 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighrhAvenue::VERSION = '0.07';
+$Map::Tube::NYC::Line::INDEighrhAvenue::VERSION   = '0.08';
+$Map::Tube::NYC::Line::INDEighrhAvenue::AUTHORITY = 'cpan:MANWAR';
+
+use strict; use warnings;
 
 =head1 NAME
 
@@ -8,7 +11,7 @@ Map::Tube::NYC::Line::INDEighthAvenue - New York Metro IND Eighth Avenue Line st
 
 =head1 VERSION
 
-Version 0.07
+Version 0.08
 
 =head1 DESCRIPTION
 
@@ -96,7 +99,7 @@ L<http://search.cpan.org/dist/Map-Tube-NYC/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2014 Mohammad S Anwar.
+Copyright (C) 2014 - 2015 Mohammad S Anwar.
 
 This  program  is  free software; you can redistribute it and/or modify it under
 the  terms  of the the Artistic License (2.0). You may obtain a copy of the full

@@ -1,5 +1,12 @@
 Revision history for Map-Tube-NYC
 
+0.08  Mon Jan 05 11:05:10 2015
+      - Upgraded to use Map::Tube v2.57 as it brings in new fix and feature.
+      - Updated Makefile.PL to generate the key 'provides' for META file correctly.
+      - Added unit test to test META files.
+      - Added LICENSE file.
+      - Updated Copyright year information.
+
 0.07  Sat Dec 20 09:45:00 2014
       - Upgraded to use Map::Tube v2.46.
       - Added package to list subway stations for "IND Eighth Avenue".

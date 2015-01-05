@@ -24,13 +24,19 @@ WriteMakefile(
         'Moo'              => 0,
         'namespace::clean' => 0,
         'File::Share'      => 0,
-        'Map::Tube'        => '2.46',
+        'Map::Tube'        => '2.57',
         'File::ShareDir::Install' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Map-Tube-NYC-*' },
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
+        provides    => {
+            'Map::Tube::NYC'
+                => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.08' },
+            'Map::Tube::NYC::Line::INDEighthAvenue'
+                => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.08' },
+        },
         resources => {
             repository => {
                 type => 'git',
