@@ -33,9 +33,9 @@ WriteMakefile(
         'meta-spec' => { version => 2 },
         provides    => {
             'Map::Tube::NYC'
-                => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.08' },
+                => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.09' },
             'Map::Tube::NYC::Line::INDEighthAvenue'
-                => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.08' },
+                => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.09' },
         },
         resources => {
             repository => {

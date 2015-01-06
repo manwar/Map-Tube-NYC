@@ -1,5 +1,8 @@
 Revision history for Map-Tube-NYC
 
+0.09  Tue Jan 06 12:10:15 2015
+      - Fixed the MANIFEST.SKIP file regarding _eumm folder.
+
 0.08  Mon Jan 05 11:05:10 2015
       - Upgraded to use Map::Tube v2.57 as it brings in new fix and feature.
       - Updated Makefile.PL to generate the key 'provides' for META file correctly.
