@@ -24,7 +24,7 @@ WriteMakefile(
         'Moo'              => 0,
         'namespace::clean' => 0,
         'File::Share'      => 0,
-        'Map::Tube'        => '2.57',
+        'Map::Tube'        => '2.61',
         'File::ShareDir::Install' => 0,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
@@ -33,9 +33,9 @@ WriteMakefile(
         'meta-spec' => { version => 2 },
         provides    => {
             'Map::Tube::NYC'
-                => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.10' },
+                => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.11' },
             'Map::Tube::NYC::Line::INDEighthAvenue'
-                => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.10' },
+                => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.11' },
         },
         resources => {
             repository => {
