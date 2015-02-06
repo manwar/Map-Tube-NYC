@@ -1,4 +1,15 @@
 <tube>
+  <lines>
+      <line id="IND Eighth Avenue"    name="IND Eighth Avenue"    color="#000080" /> <!-- Blue   -->
+      <line id="IND Sixth Avenue"     name="IND Sixth Avenue"     color="#FF4F00" /> <!-- Orange -->
+      <line id="IND Crosstown"        name="IND Crosstown"        color="#006400" /> <!-- Green  -->
+      <line id="BMT Nassau Street"    name="BMT Nassau Street"    color="#550000" /> <!-- Brown  -->
+      <line id="BMT Broadway"         name="BMT Broadway"         color="#FFFF00" /> <!-- Yellow -->
+      <line id="IRT Broadway"         name="IRT Broadway"         color="#8B0000" /> <!-- Red    -->
+      <line id="IRT Lexington Avenue" name="IRT Lexington Avenue" color="#006400" /> <!-- Green  -->
+      <line id="IRT Flushing"         name="IRT Flushing"         color="#871F78" /> <!-- Purple -->
+  </lines>
+
   <stations>
     <station id="EA01" name="207th Street"       line="IND Eighth Avenue" link="EA02"/>
     <station id="EA02" name="Dyckman Street"     line="IND Eighth Avenue" link="EA03,EA01"/>
