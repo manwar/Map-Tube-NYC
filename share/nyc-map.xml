@@ -1,4 +1,4 @@
-<tube>
+<tube name="NYC Subway">
   <lines>
       <line id="IND Eighth Avenue"    name="IND Eighth Avenue"    color="#000080" /> <!-- Blue   -->
       <line id="IND Sixth Avenue"     name="IND Sixth Avenue"     color="#FF4F00" /> <!-- Orange -->

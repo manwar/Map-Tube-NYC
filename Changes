@@ -1,5 +1,8 @@
 Revision history for Map-Tube-NYC
 
+0.14  Tue Feb 10 12:10:00 2015
+      - Added tube name to the map xml data file.
+
 0.13  Fri Feb 06 17:30:00 2015
       - Upgraded to use Map::Tube v2.78.
       - Added map for IND Eighth Avenue line.

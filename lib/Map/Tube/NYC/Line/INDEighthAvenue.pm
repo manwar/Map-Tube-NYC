@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighrhAvenue::VERSION   = '0.13';
+$Map::Tube::NYC::Line::INDEighrhAvenue::VERSION   = '0.14';
 $Map::Tube::NYC::Line::INDEighrhAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDEighthAvenue - New York Metro IND Eighth Avenue Line st
 
 =head1 VERSION
 
-Version 0.13
+Version 0.14
 
 =head1 DESCRIPTION
 
