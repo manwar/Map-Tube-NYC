@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDSixthAvenue;
 
-$Map::Tube::NYC::Line::INDSixthAvenue::VERSION   = '0.15';
+$Map::Tube::NYC::Line::INDSixthAvenue::VERSION   = '0.16';
 $Map::Tube::NYC::Line::INDSixthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -8,15 +8,15 @@ use strict; use warnings;
 
 =head1 NAME
 
-Map::Tube::NYC::Line::INDSixthAvenue - New York Metro IND Sixth Avenue Line stations.
+Map::Tube::NYC::Line::INDSixthAvenue - NYC Subway: IND Sixth Avenue Line stations.
 
 =head1 VERSION
 
-Version 0.15
+Version 0.16
 
 =head1 DESCRIPTION
 
-New York Metro IND Sixth Avenue Line stations.
+NYC Subway: IND Sixth Avenue Line stations.
 
     +--------------------+-----------------------------------+
     |                    |                                   |
@@ -25,7 +25,7 @@ New York Metro IND Sixth Avenue Line stations.
     +--------------------+-----------------------------------+
     | 57th Street        | Seventh Avenue                    |
     | Seventh Avenue     | 57th Street, Rockfeller Center    |
-    | Rockfeller Center  | Seventh Avenue, Bryant Park       |
+    | Rockefeller Center | Seventh Avenue, Bryant Park       |
     | Bryant Park        | Rockfeller Center, Herald Square  |
     | Herald Square      | Bryant Park, 23rd Street          |
     | 23rd Street        | Herald Square, 14th Street        |

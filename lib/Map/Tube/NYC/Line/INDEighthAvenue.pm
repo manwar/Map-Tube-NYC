@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.15';
+$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.16';
 $Map::Tube::NYC::Line::INDEighthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -8,15 +8,15 @@ use strict; use warnings;
 
 =head1 NAME
 
-Map::Tube::NYC::Line::INDEighthAvenue - New York Metro IND Eighth Avenue Line stations.
+Map::Tube::NYC::Line::INDEighthAvenue - NYC Subway: IND Eighth Avenue Line stations.
 
 =head1 VERSION
 
-Version 0.15
+Version 0.16
 
 =head1 DESCRIPTION
 
-New York Metro IND Eighth Avenue Line stations.
+NYC Subway: IND Eighth Avenue Line stations.
 
     +---------------------+-----------------------------------+
     |                     |                                   |

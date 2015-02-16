@@ -17,7 +17,7 @@
     <station id="HERALD-SQUARE"      name="Herald Square"      line="IND Sixth Avenue,BMT Broadway"                                         link="SA04,SA06"/>
     <station id="14th-STREET"        name="14th Street"        line="IND Sixth Avenue,IRT Broadway"                                         link="SA06,WEST-FOURTH-STREET"/>
     <station id="UNION-SQUARE"       name="Union Square"       line="IND Eighth Avenue,BMT Canarsie"                                        link="WEST-FOURTH-STREET,EA23"/>
-    <station id="WEST-FOURTH-STREET" name="West Fourth Street" line="IND Sixth Avenue,IND Eighth Avenue"                                    link="14th-STREET,SA09"/>
+    <station id="WEST-FOURTH-STREET" name="West Fourth Street" line="IND Sixth Avenue,IND Eighth Avenue"                                    link="14th-STREET,SA09,UNION-SQUARE,EA26"/>
     <station id="FULTON-STREET"      name="Fulton Street"      line="IND Eighth Avenue,IRT Broadway,IRT Lexington Avenue,BMT Nassau Street" link="EA30,EA28"/>
 
     <!-- http://en.wikipedia.org/wiki/IND_Eighth_Avenue_Line -->
@@ -42,7 +42,6 @@
     <station id="EA20" name="50th Street"        line="IND Eighth Avenue" link="42nd-STREET,59th-STREET"  />
     <station id="EA22" name="34th Street"        line="IND Eighth Avenue" link="EA23,42nd-STREET"         />
     <station id="EA23" name="23rd Street"        line="IND Eighth Avenue" link="UNION-SQUARE,EA22"        />
-    <station id="EA25" name="West Fourth Street" line="IND Eighth Avenue" link="EA26,UNION-SQUARE"        />
     <station id="EA26" name="Spring Street"      line="IND Eighth Avenue" link="EA27,WEST-FOURTH-STREET"  />
     <station id="EA27" name="Canal Street"       line="IND Eighth Avenue" link="EA28,EA26"                />
     <station id="EA28" name="Chambers Street"    line="IND Eighth Avenue" link="FULTON-STREET,EA27"       />
@@ -51,7 +50,7 @@
     <!-- http://en.wikipedia.org/wiki/IND_Sixth_Avenue_Line -->
     <station id="SA01" name="57th Street"        line="IND Sixth Avenue"  link="SA02"                     />
     <station id="SA02" name="Seventh Avenue"     line="IND Sixth Avenue"  link="SA01,SA03"                />
-    <station id="SA03" name="Rockfeller Center"  line="IND Sixth Avenue"  link="SA02,SA04"                />
+    <station id="SA03" name="Rockefeller Center" line="IND Sixth Avenue"  link="SA02,SA04"                />
     <station id="SA04" name="Bryant Park"        line="IND Sixth Avenue"  link="SA03,HERALD-SQUARE"       />
     <station id="SA06" name="23rd Street"        line="IND Sixth Avenue"  link="HERALD-SQUARE,14th-STREET"/>
     <station id="SA09" name="Lafayette Street"   line="IND Sixth Avenue"  link="WEST-FOURTH-STREET,SA10"  />

@@ -1,5 +1,13 @@
 Revision history for Map-Tube-NYC
 
+0.16  Mon Feb 16 15:25:00 2015
+      - Updated link information for the station "West Fourth Street" in the xml data file.
+      - Updated station "Rockefeller Center" in the xml data file.
+      - Added unit test for the IND Sixth Avenue line.
+      - Added NYC Subway map.
+      - Added IND Sixth Avenue line map.
+      - Updated IND Eighth Avenue line map.
+
 0.15  Mon Feb 16 12:55:00 2015
       - Added package to list subway stations for "IND Sixth Avenue".
       - Updated xml data and added stations for the above line.
@@ -51,7 +59,7 @@ Revision history for Map-Tube-NYC
 
 0.03  Thu Dec 04 20:50:10 2014
       - Updated unit test to make use of new class provided by Map::Tube role.
-      - Updated description of method get_shortest_route() in the pod documemt.
+      - Updated description of method get_shortest_route() in the pod document.
 
 0.02  Wed Dec 03 21:37:10 2014
       - Upgraded to use Map::Tube v2.31 as it brings in new fix and feature.
