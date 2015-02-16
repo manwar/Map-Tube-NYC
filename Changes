@@ -1,5 +1,10 @@
 Revision history for Map-Tube-NYC
 
+0.17  Mon Feb 16 17:50:00 2015
+      - Upgraded to use Map::Tube v2.83.
+      - Updated visual settings in the pod document for IND Sixth Avenue line map.
+      - Updated sample code in the pod document.
+
 0.16  Mon Feb 16 15:25:00 2015
       - Updated link information for the station "West Fourth Street" in the xml data file.
       - Updated station "Rockefeller Center" in the xml data file.
