@@ -1,7 +1,7 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighrhAvenue::VERSION   = '0.14';
-$Map::Tube::NYC::Line::INDEighrhAvenue::AUTHORITY = 'cpan:MANWAR';
+$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.15';
+$Map::Tube::NYC::Line::INDEighthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
 use strict; use warnings;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDEighthAvenue - New York Metro IND Eighth Avenue Line st
 
 =head1 VERSION
 
-Version 0.14
+Version 0.15
 
 =head1 DESCRIPTION
 
@@ -45,15 +45,34 @@ New York Metro IND Eighth Avenue Line stations.
     | 50th Street         | 59th Street, 42nd Street          |
     | 42nd Street         | 50th Street, 34th Street          |
     | 34th Street         | 42nd Street, 23rd Street          |
-    | 23rd Street         | 34th Street, 14th Street          |
-    | 14th Street         | 23rd Street, West Fourth Street   |
-    | West Fourth Street  | 14th Street, Spring Street        |
+    | 23rd Street         | 34th Street, Union Square         |
+    | Union Square        | 23rd Street, West Fourth Street   |
+    | West Fourth Street  | Union Square, Spring Stree        |
     | Spring Street       | West Fourth Street, Canal Street  |
     | Canal Street        | Spring Street, Chambers Street    |
     | Chambers Street     | Canal Street, Fulton Street       |
     | Fulton Street       | Chambers Street, High Street      |
     | High Street         | Fulton Street                     |
     +---------------------+-----------------------------------+
+
+=head1 NOTE
+
+=over 2
+
+=item * The station "West Fourth Street" is also part of L<IND Sixth Avenue Line|Map::Tube::NYC::Line::INDSixthAvenue>.
+
+=item * The station "Fulton Street" is also part of IRT Broadway Line |
+        IRT Lexington Avenue Line |
+        BMT Nassau Street Line.
+
+=item * The station "Union Square" is also part of BMT Canarsie Line.
+
+=item * The station "59th Street" is also part of IRT Broadway Line.
+
+=item * The station "42nd Street" is also part of IRT Broadway Line |
+        IRT Flushing Line.
+
+=back
 
 =head1 MAP
 

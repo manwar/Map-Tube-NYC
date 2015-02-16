@@ -1,5 +1,10 @@
 Revision history for Map-Tube-NYC
 
+0.15  Mon Feb 16 12:55:00 2015
+      - Added package to list subway stations for "IND Sixth Avenue".
+      - Updated xml data and added stations for the above line.
+      - Updated pod document for Map::Tube::NYC about the above changes.
+
 0.14  Tue Feb 10 12:10:00 2015
       - Added tube name to the map xml data file.
 
