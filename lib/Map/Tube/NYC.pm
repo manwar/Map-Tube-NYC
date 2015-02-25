@@ -1,6 +1,6 @@
 package Map::Tube::NYC;
 
-$Map::Tube::NYC::VERSION   = '0.17';
+$Map::Tube::NYC::VERSION   = '0.18';
 $Map::Tube::NYC::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ Map::Tube::NYC - Interface to the New York City Subway.
 
 =head1 VERSION
 
-Version 0.17
+Version 0.18
 
 =cut
 
@@ -37,13 +37,13 @@ given  nodes. It covers the following subway lines just yet:
 
 =item * L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>
 
+=item * L<IND Crosstown Line|Map::Tube::NYC::Line::INDCrosstown>
+
 =back
 
 =head1 TODO (Subway Lines)
 
 =over 2
-
-=item * IND Crosstown Line
 
 =item * BMT Canarsie Line
 

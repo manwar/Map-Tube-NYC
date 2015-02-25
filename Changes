@@ -1,5 +1,12 @@
 Revision history for Map-Tube-NYC
 
+0.18  Wed Feb 25 15:25:00 2015
+      - Upgraded to use Map::Tube v2.87.
+      - Added package to list subway stations for "IND Crosstown Line".
+      - Added unit test for the "IND Crosstown Line".
+      - Added map for the "IND Crosstown Line".
+      - Updated NYC Subway map.
+
 0.17  Mon Feb 16 17:50:00 2015
       - Upgraded to use Map::Tube v2.83.
       - Updated visual settings in the pod document for IND Sixth Avenue line map.
