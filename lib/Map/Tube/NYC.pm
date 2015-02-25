@@ -1,15 +1,15 @@
 package Map::Tube::NYC;
 
-$Map::Tube::NYC::VERSION   = '0.19';
+$Map::Tube::NYC::VERSION   = '0.20';
 $Map::Tube::NYC::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
 
-Map::Tube::NYC - Interface to the New York City Subway.
+Map::Tube::NYC - Interface to the NYC Subway Map.
 
 =head1 VERSION
 
-Version 0.19
+Version 0.20
 
 =cut
 
@@ -72,8 +72,8 @@ The constructor DO NOT expects parameters.This setup the default node definition
 
 =head2 get_shortest_route($from, $to)
 
-Expects 'from' and 'to' station name and returns an object of type L<Map::Tube::Route>.
-On error it returns an object of type L<Map::Tube::Exception>.
+It expects C<$from> and C<$to> station name, required param. It returns an object
+of type L<Map::Tube::Route>. On error it throws exception of type L<Map::Tube::Exception>.
 
     use strict; use warnings;
     use Map::Tube::NYC;

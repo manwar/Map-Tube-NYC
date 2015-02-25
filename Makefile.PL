@@ -33,10 +33,10 @@ WriteMakefile(
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Map::Tube::NYC'                        => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.19' },
-            'Map::Tube::NYC::Line::INDSixthAvenue'  => { file => 'lib/Map/Tube/NYC/Line/INDSixthAvenue.pm',  version => '0.19' },
-            'Map::Tube::NYC::Line::INDEighthAvenue' => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.19' },
-            'Map::Tube::NYC::Line::INDCrosstown'    => { file => 'lib/Map/Tube/NYC/Line/INDCrosstown.pm',    version => '0.19' },
+            'Map::Tube::NYC'                        => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.20' },
+            'Map::Tube::NYC::Line::INDSixthAvenue'  => { file => 'lib/Map/Tube/NYC/Line/INDSixthAvenue.pm',  version => '0.20' },
+            'Map::Tube::NYC::Line::INDEighthAvenue' => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.20' },
+            'Map::Tube::NYC::Line::INDCrosstown'    => { file => 'lib/Map/Tube/NYC/Line/INDCrosstown.pm',    version => '0.20' },
         },
         resources => {
             repository => {
