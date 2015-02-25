@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.18';
+$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.19';
 $Map::Tube::NYC::Line::INDEighthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -8,52 +8,52 @@ use strict; use warnings;
 
 =head1 NAME
 
-Map::Tube::NYC::Line::INDEighthAvenue - NYC Subway: IND Eighth Avenue Line stations.
+Map::Tube::NYC::Line::INDEighthAvenue - NYC Subway Map: IND Eighth Avenue Line.
 
 =head1 VERSION
 
-Version 0.18
+Version 0.19
 
 =head1 DESCRIPTION
 
-NYC Subway: IND Eighth Avenue Line stations.
+NYC Subway Map: IND Eighth Avenue Line.
 
-    +---------------------+-----------------------------------+
-    |                     |                                   |
-    | Station Name        | Connected To                      |
-    |                     |                                   |
-    +---------------------+-----------------------------------+
-    | 207th Street        | Dyckman Street                    |
-    | Dyckman Street      | 207th Street, 190th Street        |
-    | 190th Street        | Dyckman Street, 181st Street      |
-    | 181st Street        | 190th Street, 175th Street        |
-    | 175th Street        | 181st Street, 168th Street        |
-    | 168th Street        | 175th Street, 163rd Street        |
-    | 163rd Street        | 168td Street, 155th Street        |
-    | 155th Street        | 163rd Street, 145th Street        |
-    | 145th Street        | 155th Street, 135th Street        |
-    | 135th Street        | 145th Street, 125th Street        |
-    | 125th Street        | 135th Street, 116th Street        |
-    | 116th Street        | 125th Street, 110th Street        |
-    | 110th Street        | 116th Street, 103rd Street        |
-    | 103rd Street        | 110th Street, 96th Street         |
-    | 96th Street         | 103rd Street, 86th Street         |
-    | 86th Street         | 96th Street, 81st Street          |
-    | 81st Street         | 86th Street, 72nd Street          |
-    | 72nd Street         | 81st Street, 59th Street          |
-    | 59th Street         | 72nd Street, 50th Street          |
-    | 50th Street         | 59th Street, 42nd Street          |
-    | 42nd Street         | 50th Street, 34th Street          |
-    | 34th Street         | 42nd Street, 23rd Street          |
-    | 23rd Street         | 34th Street, Union Square         |
-    | Union Square        | 23rd Street, West Fourth Street   |
-    | West Fourth Street  | Union Square, Spring Stree        |
-    | Spring Street       | West Fourth Street, Canal Street  |
-    | Canal Street        | Spring Street, Chambers Street    |
-    | Chambers Street     | Canal Street, Fulton Street       |
-    | Fulton Street       | Chambers Street, High Street      |
-    | High Street         | Fulton Street                     |
-    +---------------------+-----------------------------------+
+    +---------------------+-----------------------------------------------------+
+    |                     |                                                     |
+    | Station Name        | Connected To                                        |
+    |                     |                                                     |
+    +---------------------+-----------------------------------------------------+
+    | 207th Street        | Dyckman Street                                      |
+    | Dyckman Street      | 207th Street, 190th Street                          |
+    | 190th Street        | Dyckman Street, 181st Street                        |
+    | 181st Street        | 190th Street, 175th Street                          |
+    | 175th Street        | 181st Street, 168th Street                          |
+    | 168th Street        | 175th Street, 163rd Street                          |
+    | 163rd Street        | 168td Street, 155th Street                          |
+    | 155th Street        | 163rd Street, 145th Street                          |
+    | 145th Street        | 155th Street, 135th Street                          |
+    | 135th Street        | 145th Street, 125th Street                          |
+    | 125th Street        | 135th Street, 116th Street                          |
+    | 116th Street        | 125th Street, 110th Street                          |
+    | 110th Street        | 116th Street, 103rd Street                          |
+    | 103rd Street        | 110th Street, 96th Street                           |
+    | 96th Street         | 103rd Street, 86th Street                           |
+    | 86th Street         | 96th Street, 81st Street                            |
+    | 81st Street         | 86th Street, 72nd Street                            |
+    | 72nd Street         | 81st Street, 59th Street                            |
+    | 59th Street         | 72nd Street, 50th Street                            |
+    | 50th Street         | 59th Street, 42nd Street                            |
+    | 42nd Street         | 50th Street, 34th Street                            |
+    | 34th Street         | 42nd Street, 23rd Street                            |
+    | 23rd Street         | 34th Street, Union Square                           |
+    | Union Square        | 23rd Street, West Fourth Street                     |
+    | West Fourth Street  | Union Square, Spring Stree                          |
+    | Spring Street       | West Fourth Street, Canal Street                    |
+    | Canal Street        | Spring Street, Chambers Street                      |
+    | Chambers Street     | Canal Street, Fulton Street                         |
+    | Fulton Street       | Chambers Street, High Street                        |
+    | High Street         | Fulton Street                                       |
+    +---------------------+-----------------------------------------------------+
 
 =head1 NOTE
 
@@ -76,14 +76,14 @@ NYC Subway: IND Eighth Avenue Line stations.
 
 =head1 MAP
 
-NYC Subway: L<IND Eighth Avenue Line|https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/IND-Eighth-Avenue.png>
+NYC Subway Map: L<IND Eighth Avenue Line|https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/IND-Eighth-Avenue.png>
 map generated by plugin L<Map::Tube::Plugin::Graph>.
 
 =begin html
 
 <a href = "https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/IND-Eighth-Avenue.png">
 <img src    = "https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/IND-Eighth-Avenue.png"
-     alt    = "NYC Subway: IND Eighth Avenue Line"
+     alt    = "NYC Subway Map: IND Eighth Avenue Line"
      width  = "300px"
      height = "600px"/>
 </a>
@@ -137,8 +137,8 @@ L<http://search.cpan.org/dist/Map-Tube-NYC/>
 
 Copyright (C) 2014 - 2015 Mohammad S Anwar.
 
-This  program  is  free software; you can redistribute it and/or modify it under
-the  terms  of the the Artistic License (2.0). You may obtain a copy of the full
+This program  is  free software; you can redistribute it and / or modify it under
+the  terms  of the the Artistic License (2.0). You may obtain a  copy of the full
 license at:
 
 L<http://www.perlfoundation.org/artistic_license_2_0>
