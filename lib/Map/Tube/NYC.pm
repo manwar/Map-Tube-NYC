@@ -1,6 +1,6 @@
 package Map::Tube::NYC;
 
-$Map::Tube::NYC::VERSION   = '0.21';
+$Map::Tube::NYC::VERSION   = '0.22';
 $Map::Tube::NYC::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ Map::Tube::NYC - Interface to the NYC Subway Map.
 
 =head1 VERSION
 
-Version 0.21
+Version 0.22
 
 =cut
 
@@ -39,6 +39,8 @@ given  nodes. It covers the following subway lines just yet:
 
 =item * L<IND Crosstown Line|Map::Tube::NYC::Line::INDCrosstown>
 
+=item * L<IRT Flushing Line|Map::Tube::NYC::Line::IRTFlushing>
+
 =back
 
 =head1 TODO (Subway Lines)
@@ -54,8 +56,6 @@ given  nodes. It covers the following subway lines just yet:
 =item * IRT Broadway Line
 
 =item * IRT Lexington Avenue Line
-
-=item * IRT Flushing Line
 
 =back
 

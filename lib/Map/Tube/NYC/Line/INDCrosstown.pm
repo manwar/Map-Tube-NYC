@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDCrosstown;
 
-$Map::Tube::NYC::Line::INDCrosstown::VERSION   = '0.21';
+$Map::Tube::NYC::Line::INDCrosstown::VERSION   = '0.22';
 $Map::Tube::NYC::Line::INDCrosstown::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDCrosstown - NYC Subway Map: IND Crosstown Line.
 
 =head1 VERSION
 
-Version 0.21
+Version 0.22
 
 =head1 DESCRIPTION
 
@@ -42,7 +42,7 @@ NYC Subway Map: IND Crosstown Line.
 
 =over 2
 
-=item * The station "21st Street" is also part of IRT Flushing Line.
+=item * The station "Court Square" is also part of L<IRT Flushing Line|Map::Tube::NYC::Line::IRTFlushing>.
 
 =back
 

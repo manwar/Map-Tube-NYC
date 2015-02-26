@@ -4,6 +4,7 @@ lib/Map/Tube/NYC.pm
 lib/Map/Tube/NYC/Line/INDSixthAvenue.pm
 lib/Map/Tube/NYC/Line/INDEighthAvenue.pm
 lib/Map/Tube/NYC/Line/INDCrosstown.pm
+lib/Map/Tube/NYC/Line/IRTFlushing.pm
 Makefile.PL
 LICENSE
 MANIFEST
@@ -18,3 +19,4 @@ t/meta-json.t
 t/ind-eighth-avenue.t
 t/ind-sixth-avenue.t
 t/ind-crosstown.t
+t/irt-flushing.t

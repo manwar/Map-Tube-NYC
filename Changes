@@ -1,5 +1,11 @@
 Revision history for Map-Tube-NYC
 
+0.22  Thu Feb 26 16:30:00 2015
+      - Added package to list subway stations for "IRT Flushing Line".
+      - Added unit test for the "IRT Flushing Line".
+      - Added map for the "IRT Flushing Line".
+      - Updated NYC Subway map.
+
 0.21  Thu Feb 26 11:25:00 2015
       - Added File::ShareDir::Install as configure requires in the Makefile.PL file.
 

@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.21';
+$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.22';
 $Map::Tube::NYC::Line::INDEighthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDEighthAvenue - NYC Subway Map: IND Eighth Avenue Line.
 
 =head1 VERSION
 
-Version 0.21
+Version 0.22
 
 =head1 DESCRIPTION
 
@@ -70,7 +70,7 @@ NYC Subway Map: IND Eighth Avenue Line.
 =item * The station "59th Street" is also part of IRT Broadway Line.
 
 =item * The station "42nd Street" is also part of IRT Broadway Line |
-        IRT Flushing Line.
+        L<IRT Flushing Line|Map::Tube::NYC::Line::IRTFlushing>.
 
 =back
 
