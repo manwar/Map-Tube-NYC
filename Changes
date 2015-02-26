@@ -1,5 +1,8 @@
 Revision history for Map-Tube-NYC
 
+0.21  Thu Feb 26 11:25:00 2015
+      - Added File::ShareDir::Install as configure requires in the Makefile.PL file.
+
 0.20  Wed Feb 25 17:40:00 2015
       - Updated description for method get_shortest_route() in the pod document.
 
