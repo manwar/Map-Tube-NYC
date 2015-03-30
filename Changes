@@ -1,5 +1,8 @@
 Revision history for Map-Tube-NYC
 
+0.23  Mon Mar 30 09:00:00 2015
+      - Fixed the station '23rd Street' data in the xml file.
+
 0.22  Thu Feb 26 16:30:00 2015
       - Added package to list subway stations for "IRT Flushing Line".
       - Added unit test for the "IRT Flushing Line".
