@@ -1,5 +1,8 @@
 Revision history for Map-Tube-NYC
 
+0.24  Sun Jul 26 12:00:00 2015
+      - Upgraded to use Map::Tube v3.00.
+
 0.23  Mon Mar 30 09:00:00 2015
       - Fixed the station '23rd Street' data in the xml file.
 
