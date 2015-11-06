@@ -21,24 +21,24 @@ WriteMakefile(
         'File::ShareDir::Install' => '0.09',
     },
     BUILD_REQUIRES   => {
-        'Test::More' => '1.001014',
+        'Test::More' => 0,
     },
     PREREQ_PM => {
         'Moo'              => '2.000000',
         'namespace::clean' => '0.24',
         'File::Share'      => '0.25',
-        'Map::Tube'        => '3.01',
+        'Map::Tube'        => '3.12',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Map-Tube-NYC-*' },
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Map::Tube::NYC'                        => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.25' },
-            'Map::Tube::NYC::Line::INDSixthAvenue'  => { file => 'lib/Map/Tube/NYC/Line/INDSixthAvenue.pm',  version => '0.25' },
-            'Map::Tube::NYC::Line::INDEighthAvenue' => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.25' },
-            'Map::Tube::NYC::Line::INDCrosstown'    => { file => 'lib/Map/Tube/NYC/Line/INDCrosstown.pm',    version => '0.25' },
-            'Map::Tube::NYC::Line::IRTFlushing'     => { file => 'lib/Map/Tube/NYC/Line/IRTFlushing.pm',     version => '0.25' },
+            'Map::Tube::NYC'                        => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.26' },
+            'Map::Tube::NYC::Line::INDSixthAvenue'  => { file => 'lib/Map/Tube/NYC/Line/INDSixthAvenue.pm',  version => '0.26' },
+            'Map::Tube::NYC::Line::INDEighthAvenue' => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.26' },
+            'Map::Tube::NYC::Line::INDCrosstown'    => { file => 'lib/Map/Tube/NYC/Line/INDCrosstown.pm',    version => '0.26' },
+            'Map::Tube::NYC::Line::IRTFlushing'     => { file => 'lib/Map/Tube/NYC/Line/IRTFlushing.pm',     version => '0.26' },
         },
         resources => {
             repository => {
