@@ -1,5 +1,8 @@
 Revision history for Map-Tube-NYC
 
+0.27  Fri Feb 26 18:10:00 2015
+      - Added line BMT Canarsie.
+
 0.26  Fri Nov 06 11:15:00 2015
       - Fixed the error reported by CPANT Testers.
       - Upgraded to use Map::Tube v3.12.

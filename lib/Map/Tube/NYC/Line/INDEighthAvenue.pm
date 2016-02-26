@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.26';
+$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.27';
 $Map::Tube::NYC::Line::INDEighthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDEighthAvenue - NYC Subway Map: IND Eighth Avenue Line.
 
 =head1 VERSION
 
-Version 0.26
+Version 0.27
 
 =head1 DESCRIPTION
 
@@ -65,7 +65,7 @@ NYC Subway Map: IND Eighth Avenue Line.
         IRT Lexington Avenue Line |
         BMT Nassau Street Line.
 
-=item * The station "Union Square" is also part of BMT Canarsie Line.
+=item * The station "Union Square" is also part of L<BMT Canarsie Line|Map::Tube::NYC::Line::BMTCanarsie>.
 
 =item * The station "59th Street" is also part of IRT Broadway Line.
 

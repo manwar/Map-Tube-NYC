@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDSixthAvenue;
 
-$Map::Tube::NYC::Line::INDSixthAvenue::VERSION   = '0.26';
+$Map::Tube::NYC::Line::INDSixthAvenue::VERSION   = '0.27';
 $Map::Tube::NYC::Line::INDSixthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,32 +12,30 @@ Map::Tube::NYC::Line::INDSixthAvenue - NYC Subway Map: IND Sixth Avenue Line.
 
 =head1 VERSION
 
-Version 0.26
+Version 0.27
 
 =head1 DESCRIPTION
 
 NYC Subway Map: IND Sixth Avenue Line.
 
-    +--------------------+------------------------------------------------------+
-    |                    |                                                      |
-    | Station Name       | Connected To                                         |
-    |                    |                                                      |
-    +--------------------+------------------------------------------------------+
-    | 57th Street        | Seventh Avenue                                       |
-    | Seventh Avenue     | 57th Street, Rockfeller Center                       |
-    | Rockefeller Center | Seventh Avenue, Bryant Park                          |
-    | Bryant Park        | Rockfeller Center, Herald Square                     |
-    | Herald Square      | Bryant Park, 23rd Street                             |
-    | 23rd Street        | Herald Square, 14th Street                           |
-    | 14th Street        | 23rd Street, West Fourth Street                      |
-    | West Fourth Street | 14th Street, Lafayette Street                        |
-    | Lafayette Street   | West Fourth Street, Grand Street                     |
-    | Grand Street       | Lafayette Street, Second Avenue                      |
-    | Second Avenue      | Grand Street, Delancey Avenue                        |
-    | Delancey Avenue    | Second Avenue, East Broadway                         |
-    | East Broadway      | Delancey Avenue, York Street                         |
-    | York Street        | East Broadway                                        |
-    +--------------------+------------------------------------------------------+
+    +-----------------------------+-------------------------------------------------+
+    | Station Name                | Connected To                                    |
+    +-----------------------------+-------------------------------------------------+
+    | 57th Street                 | Seventh Avenue                                  |
+    | Seventh Avenue              | 57th Street, Rockfeller Center                  |
+    | Rockefeller Center          | Seventh Avenue, Bryant Park                     |
+    | Bryant Park                 | Rockfeller Center, Herald Square                |
+    | Herald Square               | Bryant Park, 23rd Street                        |
+    | 23rd Street                 | Herald Square, 14th Street                      |
+    | 14th Street                 | 23rd Street, West Fourth Street                 |
+    | West Fourth Street          | 14th Street, Lafayette Street                   |
+    | Lafayette Street            | West Fourth Street, Grand Street-INDSixthAvenue |
+    | Grand Street-INDSixthAvenue | Lafayette Street, Second Avenue                 |
+    | Second Avenue               | Grand Street-INDSixthAvenue, Delancey Avenue    |
+    | Delancey Avenue             | Second Avenue, East Broadway                    |
+    | East Broadway               | Delancey Avenue, York Street                    |
+    | York Street                 | East Broadway                                   |
+    +-----------------------------+-------------------------------------------------+
 
 =head1 NOTE
 

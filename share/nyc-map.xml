@@ -17,7 +17,7 @@
     <station id="59th-STREET"        name="59th Street"        line="IND Eighth Avenue,IRT Broadway"                                        link="EA20,EA18"                                  />
     <station id="HERALD-SQUARE"      name="Herald Square"      line="IND Sixth Avenue,BMT Broadway"                                         link="SA04,23rd-STREET"                           />
     <station id="14th-STREET"        name="14th Street"        line="IND Sixth Avenue,IRT Broadway"                                         link="23rd-STREET,WEST-FOURTH-STREET"             />
-    <station id="UNION-SQUARE"       name="Union Square"       line="IND Eighth Avenue,BMT Canarsie"                                        link="WEST-FOURTH-STREET,23rd-STREET"             />
+    <station id="UNION-SQUARE"       name="Union Square"       line="IND Eighth Avenue,BMT Canarsie"                                        link="WEST-FOURTH-STREET,23rd-STREET,CS02,CS04"   />
     <station id="WEST-FOURTH-STREET" name="West Fourth Street" line="IND Sixth Avenue,IND Eighth Avenue"                                    link="14th-STREET,SA09,UNION-SQUARE,EA26"         />
     <station id="FULTON-STREET"      name="Fulton Street"      line="IND Eighth Avenue,IRT Broadway,IRT Lexington Avenue,BMT Nassau Street" link="EA30,EA28"                                  />
     <station id="23rd-STREET"        name="23rd Street"        line="IND Sixth Avenue,IND Eighth Avenue"                                    link="HERALD-SQUARE,14th-STREET,UNION-SQUARE,EA22"/>
@@ -54,7 +54,7 @@
     <station id="SA03" name="Rockefeller Center"              line="IND Sixth Avenue"  link="SA02,SA04"                />
     <station id="SA04" name="Bryant Park"                     line="IND Sixth Avenue"  link="SA03,HERALD-SQUARE"       />
     <station id="SA09" name="Lafayette Street"                line="IND Sixth Avenue"  link="WEST-FOURTH-STREET,SA10"  />
-    <station id="SA10" name="Grand Street"                    line="IND Sixth Avenue"  link="SA09,SA11"                />
+    <station id="SA10" name="Grand Street-INDSixthAvenue"     line="IND Sixth Avenue"  link="SA09,SA11"                />
     <station id="SA11" name="Second Avenue"                   line="IND Sixth Avenue"  link="SA10,SA12"                />
     <station id="SA12" name="Delancey Avenue"                 line="IND Sixth Avenue"  link="SA11,SA13"                />
     <station id="SA13" name="East Broadway"                   line="IND Sixth Avenue"  link="SA12,SA14"                />
@@ -75,6 +75,30 @@
     <station id="CT13" name="Hoyt-Schermerhorn Streets"       line="IND Crosstown"     link="CT12"                     />
 
     <!-- http://en.wikipedia.org/wiki/BMT_Canarsie_Line -->
+    <station id="CS01" name="Eighth Avenue"                   line="BMT Canarsie"      link="CS02"                     />
+    <station id="CS02" name="Sixth Avenue"                    line="BMT Canarsie"      link="CS01,UNION-SQUARE"        />
+    <station id="CS04" name="Third Avenue"                    line="BMT Canarsie"      link="UNION-SQUARE,CS05"        />
+    <station id="CS05" name="First Avenue"                    line="BMT Canarsie"      link="CS04,CS06"                />
+    <station id="CS06" name="Bedford Avenue"                  line="BMT Canarsie"      link="CS05,CS07"                />
+    <station id="CS07" name="Lorimer Street"                  line="BMT Canarsie"      link="CS06,CS08"                />
+    <station id="CS08" name="Graham Avenue"                   line="BMT Canarsie"      link="CS07,CS09"                />
+    <station id="CS09" name="Grand Street-BMTCanarsie"        line="BMT Canarsie"      link="CS08,CS10"                />
+    <station id="CS10" name="Montrose Avenue"                 line="BMT Canarsie"      link="CS09,CS11"                />
+    <station id="CS11" name="Morgan Avenue"                   line="BMT Canarsie"      link="CS10,CS12"                />
+    <station id="CS12" name="Jefferson Street"                line="BMT Canarsie"      link="CS11,CS13"                />
+    <station id="CS13" name="DeKalb Avenue"                   line="BMT Canarsie"      link="CS12,CS14"                />
+    <station id="CS14" name="Myrtle-Wyckoff Avenue"           line="BMT Canarsie"      link="CS13,CS15"                />
+    <station id="CS15" name="Halsey Street"                   line="BMT Canarsie"      link="CS14,CS16"                />
+    <station id="CS16" name="Wilson Avenue"                   line="BMT Canarsie"      link="CS15,CS17"                />
+    <station id="CS17" name="Bushwick Avenue"                 line="BMT Canarsie"      link="CS16,CS18"                />
+    <station id="CS18" name="Broadway Junction"               line="BMT Canarsie"      link="CS17,CS19"                />
+    <station id="CS19" name="Atlantic Avenue"                 line="BMT Canarsie"      link="CS18,CS20"                />
+    <station id="CS20" name="Sutter Avenue"                   line="BMT Canarsie"      link="CS19,CS21"                />
+    <station id="CS21" name="Livonia Avenue"                  line="BMT Canarsie"      link="CS20,CS22"                />
+    <station id="CS22" name="New Lots Avenue"                 line="BMT Canarsie"      link="CS21,CS23"                />
+    <station id="CS23" name="East 105th Street"               line="BMT Canarsie"      link="CS22,CS24"                />
+    <station id="CS24" name="Canarsie - Rockaway Parkway"     line="BMT Canarsie"      link="CS23"                     />
+
     <!-- http://en.wikipedia.org/wiki/BMT_Nassau_Street_Line -->
     <!-- http://en.wikipedia.org/wiki/BMT_Broadway_Line -->
     <!-- http://en.wikipedia.org/wiki/IRT_Broadway_%E2%80%93_Seventh_Avenue_Line -->

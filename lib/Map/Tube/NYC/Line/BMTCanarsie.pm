@@ -1,14 +1,14 @@
-package Map::Tube::NYC::Line::INDCrosstown;
+package Map::Tube::NYC::Line::BMTCanarsie;
 
-$Map::Tube::NYC::Line::INDCrosstown::VERSION   = '0.27';
-$Map::Tube::NYC::Line::INDCrosstown::AUTHORITY = 'cpan:MANWAR';
+$Map::Tube::NYC::Line::BMTCanarsie::VERSION   = '0.27';
+$Map::Tube::NYC::Line::BMTCanarsie::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
 use strict; use warnings;
 
 =head1 NAME
 
-Map::Tube::NYC::Line::INDCrosstown - NYC Subway Map: IND Crosstown Line.
+Map::Tube::NYC::Line::BMTCanarsie - NYC Subway Map: BMT Canarsie Line.
 
 =head1 VERSION
 
@@ -16,46 +16,55 @@ Version 0.27
 
 =head1 DESCRIPTION
 
-NYC Subway Map: IND Crosstown Line.
+NYC Subway Map: BMT Canarsie Line.
 
-    +----------------------------+-------------------------------------------------------+
-    |                            |                                                       |
-    | Station Name               | Connected To                                          |
-    |                            |                                                       |
-    +----------------------------+-------------------------------------------------------+
-    | Court Square               | 21st Street                                           |
-    | 21st Street                | Court Square, Greenpoint Avenue                       |
-    | Greenpoint Avenue          | 21st Street, Nassau Avenue                            |
-    | Nassau Avenue              | Greenpoint Avenue, Metropolitan Avenue                |
-    | Metropolitan Avenue        | Nassau Avenue, Broadway                               |
-    | Broadway                   | Metropolitan Avenue, Flushing Avenue                  |
-    | Flushing Avenue            | Broadway, Mrytle-Willoughby Avenues                   |
-    | Myrtle-Willoughby Avenues  | Flushing Avenue, Bedford-Nostrand Avenues             |
-    | Bedford-Nostrand Avenues   | Myrtle-Willoughby Avenues, Classon Avenue             |
-    | Classon Avenue             | Bedford-Nostrand Avenues, Clinton-Washington Avenues  |
-    | Clinton-Washington Avenues | Classon Avenue, IND Fulton Street                     |
-    | IND Fulton Street          | Clinton-Washington Avenues, Hoyt-Schermerhorn Streets |
-    | Hoyt-Schermerhorn Streets  | IND Fulton Street                                     |
-    +----------------------------+-------------------------------------------------------+
+    +-----------------------------+----------------------------------------------+
+    | Station Name                | Connected To                                 |
+    +-----------------------------+----------------------------------------------+
+    | Eighth Avenue               | Sixth Avenue                                 |
+    | Sixth Avenue                | Eighth Avenue, Union Square                  |
+    | Union Square                | Sixth Avenue, Third Avenue                   |
+    | Third Avenue                | Union Square, First Avenue                   |
+    | First Avenue                | Third Avenue, Bedford Avenue                 |
+    | Bedford Avenue              | First Avenue, Lorimer Street                 |
+    | Lorimer Street              | Bedford Avenue, Graham Avenue                |
+    | Graham Avenue               | Lorimer Street, Grand Street-BMTCanarsie     |
+    | Grand Street-BMTCanarsie    | Graham Avenue, Montrose Avenue               |
+    | Montrose Avenue             | Grand Street-BMTCanarsie, Morgan Avenue      |
+    | Morgan Avenue               | Montrose Avenue, Jefferson Street            |
+    | Jefferson Street            | Morgan Avenue, DeKalb Avenue                 |
+    | DeKalb Avenue               | Jefferson Street, Myrtle-Wyckoff Avenue      |
+    | Myrtle-Wyckoff Avenue       | DeKalb Avenue, Halsey Street                 |
+    | Halsey Street               | Myrtle-Wyckoff Avenue, Wilson Avenue         |
+    | Wilson Avenue               | Halsey Street, Bushwick Avenue               |
+    | Bushwick Avenue             | Wilson Avenue, Broadway Junction             |
+    | Broadway Junction           | Bushwick Avenue, Atlantic Avenue             |
+    | Atlantic Avenue             | Broadway Junction, Sutter Avenue             |
+    | Sutter Avenue               | Atlantic Avenue, Livonia Avenue              |
+    | Livonia Avenue              | Sutter Avenue, New Lots Avenue               |
+    | New Lots Avenue             | Livonia Avenue, East 105th Street            |
+    | East 105th Street           | New Lots Avenue, Canarsie - Rockaway Parkway |
+    | Canarsie - Rockaway Parkway | East 105th Street                            |
+    +-----------------------------+----------------------------------------------+
 
 =head1 NOTE
 
 =over 2
 
-=item * The station "Court Square" is also part of L<IRT Flushing Line|Map::Tube::NYC::Line::IRTFlushing>.
+=item * The station "Union Square" is also part of L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>.
 
 =back
 
 =head1 MAP
 
-NYC Subway Map: L<IND Crosstown Line|https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/IND-Crosstown.png>
+NYC Subway Map: L<BMT Canarsie Line|https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/BMT-Canarsie.png>
 map generated by plugin L<Map::Tube::Plugin::Graph>.
 
 =begin html
 
-<a href = "https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/IND-Crosstown.png">
-<img src    = "https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/IND-Crosstown.png"
-     alt    = "NYC Subway Map: IND Crosstown Line"
+<a href = "https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/BMT-Canarsie.png">
+<img src    = "https://raw.githubusercontent.com/Manwar/Map-Tube-NYC/master/maps/BMT-Canarsie.png"
+     alt    = "NYC Subway Map: BMT Canarsie Line"
      width  = "600px"
      height = "500px"/>
 </a>
@@ -81,7 +90,7 @@ bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc Map::Tube::NYC::Line::INDCrosstown
+    perldoc Map::Tube::NYC::Line::BMTCanarsie
 
 You can also look for information at:
 
@@ -145,4 +154,4 @@ OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
 
-1; # End of Map::Tube::NYC::Line::INDCrosstown
+1; # End of Map::Tube::NYC::Line::BMTCanarsie

@@ -31,7 +31,7 @@ sub _expected_route {
 }
 
 __DATA__
-Route 1|Grand Street|14th Street|Grand Street,Lafayette Street,West Fourth Street,14th Street
+Route 1|Grand Street-INDSixthAvenue|14th Street|Grand Street-INDSixthAvenue,Lafayette Street,West Fourth Street,14th Street
 Route 2|23rd Street|Seventh Avenue|23rd Street,Herald Square,Bryant Park,Rockefeller Center,Seventh Avenue
 Route 3|23rd Street|   Seventh Avenue|23rd Street,Herald Square,Bryant Park,Rockefeller Center,Seventh Avenue
 Route 4|23rd Street|Seventh Avenue  |23rd Street,Herald Square,Bryant Park,Rockefeller Center,Seventh Avenue

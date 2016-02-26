@@ -34,17 +34,18 @@ WriteMakefile(
     (eval { ExtUtils::MakeMaker->VERSION(6.46) } ? (META_MERGE => {
         'meta-spec' => { version => 2 },
         provides    => {
-            'Map::Tube::NYC'                        => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.26' },
-            'Map::Tube::NYC::Line::INDSixthAvenue'  => { file => 'lib/Map/Tube/NYC/Line/INDSixthAvenue.pm',  version => '0.26' },
-            'Map::Tube::NYC::Line::INDEighthAvenue' => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.26' },
-            'Map::Tube::NYC::Line::INDCrosstown'    => { file => 'lib/Map/Tube/NYC/Line/INDCrosstown.pm',    version => '0.26' },
-            'Map::Tube::NYC::Line::IRTFlushing'     => { file => 'lib/Map/Tube/NYC/Line/IRTFlushing.pm',     version => '0.26' },
+            'Map::Tube::NYC'                        => { file => 'lib/Map/Tube/NYC.pm',                      version => '0.27' },
+            'Map::Tube::NYC::Line::INDSixthAvenue'  => { file => 'lib/Map/Tube/NYC/Line/INDSixthAvenue.pm',  version => '0.27' },
+            'Map::Tube::NYC::Line::INDEighthAvenue' => { file => 'lib/Map/Tube/NYC/Line/INDEighthAvenue.pm', version => '0.27' },
+            'Map::Tube::NYC::Line::INDCrosstown'    => { file => 'lib/Map/Tube/NYC/Line/INDCrosstown.pm',    version => '0.27' },
+            'Map::Tube::NYC::Line::IRTFlushing'     => { file => 'lib/Map/Tube/NYC/Line/IRTFlushing.pm',     version => '0.27' },
+            'Map::Tube::NYC::Line::BMTCanarsie'     => { file => 'lib/Map/Tube/NYC/Line/BMTCanarsie.pm',     version => '0.27' },
         },
         resources => {
             repository => {
                 type => 'git',
-                url  => 'https://github.com/Manwar/Map-Tube-NYC.git',
-                web  => 'https://github.com/Manwar/Map-Tube-NYC',
+                url  => 'https://github.com/manwar/Map-Tube-NYC.git',
+                web  => 'https://github.com/manwar/Map-Tube-NYC',
             },
         }})
      : ()

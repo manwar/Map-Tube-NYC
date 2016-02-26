@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDFlushing;
 
-$Map::Tube::NYC::Line::IRTFlushing::VERSION   = '0.26';
+$Map::Tube::NYC::Line::IRTFlushing::VERSION   = '0.27';
 $Map::Tube::NYC::Line::IRTFlushing::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::IRTFlushing - NYC Subway Map: IRT Flushing Line.
 
 =head1 VERSION
 
-Version 0.26
+Version 0.27
 
 =head1 DESCRIPTION
 
