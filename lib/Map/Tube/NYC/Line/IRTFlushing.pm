@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDFlushing;
 
-$Map::Tube::NYC::Line::IRTFlushing::VERSION   = '0.27';
+$Map::Tube::NYC::Line::IRTFlushing::VERSION   = '0.28';
 $Map::Tube::NYC::Line::IRTFlushing::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,16 +12,14 @@ Map::Tube::NYC::Line::IRTFlushing - NYC Subway Map: IRT Flushing Line.
 
 =head1 VERSION
 
-Version 0.27
+Version 0.28
 
 =head1 DESCRIPTION
 
 NYC Subway Map: IRT Flushing Line.
 
     +---------------------------------+---------------------------------------------------+
-    |                                 |                                                   |
     | Station Name                    | Connected To                                      |
-    |                                 |                                                   |
     +---------------------------------+---------------------------------------------------+
     | Flushing                        | Willets Point                                     |
     | Willets Point                   | Flushing, 111th Street                            |
@@ -79,7 +77,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Map-Tube-NYC>
+L<https://github.com/manwar/Map-Tube-NYC>
 
 =head1 BUGS
 

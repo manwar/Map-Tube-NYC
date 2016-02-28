@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDSixthAvenue;
 
-$Map::Tube::NYC::Line::INDSixthAvenue::VERSION   = '0.27';
+$Map::Tube::NYC::Line::INDSixthAvenue::VERSION   = '0.28';
 $Map::Tube::NYC::Line::INDSixthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDSixthAvenue - NYC Subway Map: IND Sixth Avenue Line.
 
 =head1 VERSION
 
-Version 0.27
+Version 0.28
 
 =head1 DESCRIPTION
 
@@ -71,7 +71,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Map-Tube-NYC>
+L<https://github.com/manwar/Map-Tube-NYC>
 
 =head1 BUGS
 

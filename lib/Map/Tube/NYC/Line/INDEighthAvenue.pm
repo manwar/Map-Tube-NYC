@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.27';
+$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.28';
 $Map::Tube::NYC::Line::INDEighthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,16 +12,14 @@ Map::Tube::NYC::Line::INDEighthAvenue - NYC Subway Map: IND Eighth Avenue Line.
 
 =head1 VERSION
 
-Version 0.27
+Version 0.28
 
 =head1 DESCRIPTION
 
 NYC Subway Map: IND Eighth Avenue Line.
 
     +---------------------+-----------------------------------------------------+
-    |                     |                                                     |
     | Station Name        | Connected To                                        |
-    |                     |                                                     |
     +---------------------+-----------------------------------------------------+
     | 207th Street        | Dyckman Street                                      |
     | Dyckman Street      | 207th Street, 190th Street                          |
@@ -96,7 +94,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Map-Tube-NYC>
+L<https://github.com/manwar/Map-Tube-NYC>
 
 =head1 BUGS
 

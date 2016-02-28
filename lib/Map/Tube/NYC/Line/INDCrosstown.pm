@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDCrosstown;
 
-$Map::Tube::NYC::Line::INDCrosstown::VERSION   = '0.27';
+$Map::Tube::NYC::Line::INDCrosstown::VERSION   = '0.28';
 $Map::Tube::NYC::Line::INDCrosstown::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,16 +12,14 @@ Map::Tube::NYC::Line::INDCrosstown - NYC Subway Map: IND Crosstown Line.
 
 =head1 VERSION
 
-Version 0.27
+Version 0.28
 
 =head1 DESCRIPTION
 
 NYC Subway Map: IND Crosstown Line.
 
     +----------------------------+-------------------------------------------------------+
-    |                            |                                                       |
     | Station Name               | Connected To                                          |
-    |                            |                                                       |
     +----------------------------+-------------------------------------------------------+
     | Court Square               | 21st Street                                           |
     | 21st Street                | Court Square, Greenpoint Avenue                       |
@@ -68,7 +66,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Map-Tube-NYC>
+L<https://github.com/manwar/Map-Tube-NYC>
 
 =head1 BUGS
 

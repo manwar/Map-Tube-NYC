@@ -1,6 +1,6 @@
 package Map::Tube::NYC;
 
-$Map::Tube::NYC::VERSION   = '0.27';
+$Map::Tube::NYC::VERSION   = '0.28';
 $Map::Tube::NYC::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ Map::Tube::NYC - Interface to the NYC Subway Map.
 
 =head1 VERSION
 
-Version 0.27
+Version 0.28
 
 =cut
 
@@ -41,13 +41,13 @@ given  nodes. It covers the following subway lines just yet:
 
 =item * L<IRT Flushing Line|Map::Tube::NYC::Line::IRTFlushing>
 
+=item * L<BMT Canarsie Line|Map::Tube::NYC::Line::BMTCanarsie>
+
 =back
 
 =head1 TODO (Subway Lines)
 
 =over 2
-
-=item * BMT Canarsie Line
 
 =item * BMT Nassau Street Line
 
@@ -120,7 +120,7 @@ Mohammad S Anwar, C<< <mohammad.anwar at yahoo.com> >>
 
 =head1 REPOSITORY
 
-L<https://github.com/Manwar/Map-Tube-NYC>
+L<https://github.com/manwar/Map-Tube-NYC>
 
 =head1 BUGS
 
