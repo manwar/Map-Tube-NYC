@@ -1,5 +1,9 @@
 Revision history for Map-Tube-NYC
 
+0.29  Fri Mar 11 11:05:00 2016
+      - Added map for BMT Nassau Street line.
+      - Added unit test for BMT Nassau Street line.
+
 0.28  Sun Feb 28 09:45:00 2016
       - Updated NYC Subway map.
       - Added map for BMT Canarsie line.

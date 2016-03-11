@@ -19,8 +19,10 @@
     <station id="14th-STREET"        name="14th Street"        line="IND Sixth Avenue,IRT Broadway"                                         link="23rd-STREET,WEST-FOURTH-STREET"             />
     <station id="UNION-SQUARE"       name="Union Square"       line="IND Eighth Avenue,BMT Canarsie"                                        link="WEST-FOURTH-STREET,23rd-STREET,CS02,CS04"   />
     <station id="WEST-FOURTH-STREET" name="West Fourth Street" line="IND Sixth Avenue,IND Eighth Avenue"                                    link="14th-STREET,SA09,UNION-SQUARE,EA26"         />
-    <station id="FULTON-STREET"      name="Fulton Street"      line="IND Eighth Avenue,IRT Broadway,IRT Lexington Avenue,BMT Nassau Street" link="EA30,EA28"                                  />
+    <station id="FULTON-STREET"      name="Fulton Street"      line="IND Eighth Avenue,IRT Broadway,IRT Lexington Avenue,BMT Nassau Street" link="EA30,CHAMBERS-STREET,NS06"                  />
     <station id="23rd-STREET"        name="23rd Street"        line="IND Sixth Avenue,IND Eighth Avenue"                                    link="HERALD-SQUARE,14th-STREET,UNION-SQUARE,EA22"/>
+    <station id="CHAMBERS-STREET"    name="Chambers Street"    line="IND Eighth Avenue,BMT Nassau Street"                                   link="FULTON-STREET,CANAL-STREET"                 />
+    <station id="CANAL-STREET"       name="Canal Street"       line="IND Eighth Avenue,BMT Nassau Street"                                   link="CHAMBERS-STREET,EA26,NS02"                  />
 
     <!-- http://en.wikipedia.org/wiki/IND_Eighth_Avenue_Line -->
     <station id="EA01" name="207th Street"                    line="IND Eighth Avenue" link="EA02"                     />
@@ -43,9 +45,7 @@
     <station id="EA18" name="72nd Street"                     line="IND Eighth Avenue" link="59th-STREET,EA17"         />
     <station id="EA20" name="50th Street"                     line="IND Eighth Avenue" link="42nd-STREET,59th-STREET"  />
     <station id="EA22" name="34th Street"                     line="IND Eighth Avenue" link="23rd-STREET,42nd-STREET"  />
-    <station id="EA26" name="Spring Street"                   line="IND Eighth Avenue" link="EA27,WEST-FOURTH-STREET"  />
-    <station id="EA27" name="Canal Street"                    line="IND Eighth Avenue" link="EA28,EA26"                />
-    <station id="EA28" name="Chambers Street"                 line="IND Eighth Avenue" link="FULTON-STREET,EA27"       />
+    <station id="EA26" name="Spring Street"                   line="IND Eighth Avenue" link="CANAL-STREET,WEST-FOURTH-STREET"/>
     <station id="EA30" name="High Street"                     line="IND Eighth Avenue" link="FULTON-STREET"            />
 
     <!-- http://en.wikipedia.org/wiki/IND_Sixth_Avenue_Line -->
@@ -56,7 +56,7 @@
     <station id="SA09" name="Lafayette Street"                line="IND Sixth Avenue"  link="WEST-FOURTH-STREET,SA10"  />
     <station id="SA10" name="Grand Street-INDSixthAvenue"     line="IND Sixth Avenue"  link="SA09,SA11"                />
     <station id="SA11" name="Second Avenue"                   line="IND Sixth Avenue"  link="SA10,SA12"                />
-    <station id="SA12" name="Delancey Avenue"                 line="IND Sixth Avenue"  link="SA11,SA13"                />
+    <station id="SA12" name="Delancey Avenue"                 line="IND Sixth Avenue"  link="SA11,SA13,NS01"           />
     <station id="SA13" name="East Broadway"                   line="IND Sixth Avenue"  link="SA12,SA14"                />
     <station id="SA14" name="York Street"                     line="IND Sixth Avenue"  link="SA13"                     />
 
@@ -100,6 +100,10 @@
     <station id="CS24" name="Canarsie - Rockaway Parkway"     line="BMT Canarsie"      link="CS23"                     />
 
     <!-- http://en.wikipedia.org/wiki/BMT_Nassau_Street_Line -->
+    <station id="NS01" name="Essex Street"                    line="BMT Nassau Street" link="NS02,SA12"                />
+    <station id="NS02" name="Bowery"                          line="BMT Nassau Street" link="NS01,CANAL-STREET"        />
+    <station id="NS06" name="Broad Street"                    line="BMT Nassau Street" link="FULTON-STREET"            />
+
     <!-- http://en.wikipedia.org/wiki/BMT_Broadway_Line -->
     <!-- http://en.wikipedia.org/wiki/IRT_Broadway_%E2%80%93_Seventh_Avenue_Line -->
     <!-- http://en.wikipedia.org/wiki/IRT_Lexington_Avenue_Line -->

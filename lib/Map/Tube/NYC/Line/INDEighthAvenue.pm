@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.28';
+$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.29';
 $Map::Tube::NYC::Line::INDEighthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDEighthAvenue - NYC Subway Map: IND Eighth Avenue Line.
 
 =head1 VERSION
 
-Version 0.28
+Version 0.29
 
 =head1 DESCRIPTION
 
@@ -61,7 +61,11 @@ NYC Subway Map: IND Eighth Avenue Line.
 
 =item * The station "Fulton Street" is also part of IRT Broadway Line |
         IRT Lexington Avenue Line |
-        BMT Nassau Street Line.
+        L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>.
+
+=item * The station "Canal Street" is also part of L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>.
+
+=item * The station "Chambers Street" is also part of L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>.
 
 =item * The station "Union Square" is also part of L<BMT Canarsie Line|Map::Tube::NYC::Line::BMTCanarsie>.
 

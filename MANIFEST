@@ -6,6 +6,7 @@ lib/Map/Tube/NYC/Line/INDEighthAvenue.pm
 lib/Map/Tube/NYC/Line/INDCrosstown.pm
 lib/Map/Tube/NYC/Line/IRTFlushing.pm
 lib/Map/Tube/NYC/Line/BMTCanarsie.pm
+lib/Map/Tube/NYC/Line/BMTNassauStreet.pm
 Makefile.PL
 LICENSE
 MANIFEST
@@ -22,3 +23,4 @@ t/ind-sixth-avenue.t
 t/ind-crosstown.t
 t/irt-flushing.t
 t/bmt-canarsie.t
+t/bmt-nassau-street.t

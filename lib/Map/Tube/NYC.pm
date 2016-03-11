@@ -1,6 +1,6 @@
 package Map::Tube::NYC;
 
-$Map::Tube::NYC::VERSION   = '0.28';
+$Map::Tube::NYC::VERSION   = '0.29';
 $Map::Tube::NYC::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ Map::Tube::NYC - Interface to the NYC Subway Map.
 
 =head1 VERSION
 
-Version 0.28
+Version 0.29
 
 =cut
 
@@ -43,13 +43,13 @@ given  nodes. It covers the following subway lines just yet:
 
 =item * L<BMT Canarsie Line|Map::Tube::NYC::Line::BMTCanarsie>
 
+=item * L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>
+
 =back
 
 =head1 TODO (Subway Lines)
 
 =over 2
-
-=item * BMT Nassau Street Line
 
 =item * BMT Broadway Line
 
