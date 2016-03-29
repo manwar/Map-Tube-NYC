@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDCrosstown;
 
-$Map::Tube::NYC::Line::INDCrosstown::VERSION   = '0.29';
+$Map::Tube::NYC::Line::INDCrosstown::VERSION   = '0.30';
 $Map::Tube::NYC::Line::INDCrosstown::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDCrosstown - NYC Subway Map: IND Crosstown Line.
 
 =head1 VERSION
 
-Version 0.29
+Version 0.30
 
 =head1 DESCRIPTION
 
@@ -105,7 +105,7 @@ L<http://search.cpan.org/dist/Map-Tube-NYC/>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (C) 2014 - 2015 Mohammad S Anwar.
+Copyright (C) 2014 - 2016 Mohammad S Anwar.
 
 This program  is  free software; you can redistribute it and / or modify it under
 the   terms  of the the Artistic License (2.0). You may obtain a copy of the full

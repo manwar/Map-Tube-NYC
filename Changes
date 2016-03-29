@@ -1,4 +1,7 @@
-Revision history for Map-Tube-NYC
+Revision history for Map::Tube::NYC
+
+0.30  Tue Mar 29 15:25:00 2016
+      - Added map data for line 'IRT Lexington Avenue'.
 
 0.29  Fri Mar 11 11:05:00 2016
       - Added map for BMT Nassau Street line.
