@@ -1,5 +1,10 @@
 Revision history for Map::Tube::NYC
 
+0.31  Fri Apr 01 16:15:00 2016
+      - Fixed typo in the package name.
+      - Updated test scripts.
+      - Updated copyright year.
+
 0.30  Tue Mar 29 15:25:00 2016
       - Added map data for line 'IRT Lexington Avenue'.
 
