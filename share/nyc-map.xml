@@ -13,7 +13,7 @@
 
   <stations>
     <station id="COURT-SQUARE"       name="Court Square"       line="IND Crosstown,IRT Flushing"                                            link="FL15,FL17,CT02"                             />
-    <station id="42nd-STREET"        name="42nd Street"        line="IND Eighth Avenue,IRT Broadway,IRT Flushing,IRT Lexington Avenue"      link="EA22,EA20,FL20,FL22,LA10,33rd-STREET"       />
+    <station id="42nd-STREET"        name="42nd Street"        line="IND Eighth Avenue,IRT Broadway,IRT Flushing,IRT Lexington Avenue"      link="EA22,EA20,FL20,FL22,LA10,33rd-STREET,GRAND-CENTRAL"/>
     <station id="59th-STREET"        name="59th Street"        line="IND Eighth Avenue,IRT Broadway,IRT Lexington Avenue"                   link="EA20,EA18,LA08,LA10"                        />
     <station id="HERALD-SQUARE"      name="Herald Square"      line="IND Sixth Avenue,BMT Broadway"                                         link="SA04,23rd-STREET"                           />
     <station id="14th-STREET"        name="14th Street"        line="IND Sixth Avenue,IRT Broadway,IRT Lexington Avenue"                    link="23rd-STREET,WEST-FOURTH-STREET,LA15,LA17"   />
@@ -30,6 +30,7 @@
     <station id="103rd-STREET"       name="103rd Street"       line="IND Eighth Avenue,IRT Lexington Avenue"                                link="96th-STREET,110th-STREET"                   />
     <station id="96th-STREET"        name="96th Street"        line="IND Eighth Avenue,IRT Lexington Avenue"                                link="86th-STREET,103rd-STREET"                   />
     <station id="33rd-STREET"        name="33rd Street"        line="IRT Flushing,IRT Lexington Avenue"                                     link="FL13,FL15,42nd-STREET,LA13"                 />
+    <station id="GRAND-CENTRAL"      name="Grand Central"      line="IRT Flushing, IRT Lexington Avenue"                                    link="FL18,FL20,42nd-STREET"                      />
 
     <!-- http://en.wikipedia.org/wiki/IND_Eighth_Avenue_Line -->
     <station id="EA01" name="207th Street"                    line="IND Eighth Avenue" link="EA02"                     />
@@ -140,9 +141,8 @@
     <station id="FL13" name="40th Street"                     line="IRT Flushing"      link="FL12,33rd-STREET"         />
     <station id="FL15" name="Queensboro Plaza"                line="IRT Flushing"      link="33rd-STREET,COURT-SQUARE" />
     <station id="FL17" name="Hunters Point Avenue"            line="IRT Flushing"      link="COURT-SQUARE,FL18"        />
-    <station id="FL18" name="Vernon Boulevard-Jackson Avenue" line="IRT Flushing"      link="FL17,FL19"                />
-    <station id="FL19" name="Grand Central"                   line="IRT Flushing"      link="FL18,FL20"                />
-    <station id="FL20" name="Fifth Avenue"                    line="IRT Flushing"      link="FL19,42nd-STREET"         />
+    <station id="FL18" name="Vernon Boulevard-Jackson Avenue" line="IRT Flushing"      link="FL17,GRAND-CENTRAL"       />
+    <station id="FL20" name="Fifth Avenue"                    line="IRT Flushing"      link="GRAND-CENTRAL,42nd-STREET"/>
     <station id="FL22" name="34th Street"                     line="IRT Flushing"      link="42nd-STREET"              />
   </stations>
 </tube>

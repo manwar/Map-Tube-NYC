@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::BMTNassauStreet;
 
-$Map::Tube::NYC::Line::BMTNassauStreet::VERSION   = '0.31';
+$Map::Tube::NYC::Line::BMTNassauStreet::VERSION   = '0.32';
 $Map::Tube::NYC::Line::BMTNassauStreet::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::BMTNassauStreet - NYC Subway Map: BMT Nassau Street Line.
 
 =head1 VERSION
 
-Version 0.31
+Version 0.32
 
 =head1 DESCRIPTION
 
@@ -33,12 +33,13 @@ NYC Subway Map: BMT Nassau Street Line.
 
 =over 2
 
-=item * The station "Canal Street" is also part of L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>.
+=item * The station "Canal Street" is also part of L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>
+        | L<IRT Lexington Avenue Line|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
 
 =item * The station "Chambers Street" is also part of L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>.
 
 =item * The station "Fulton Street" is also part of IRT Broadway Line
-        | IRT Lexington Avenue Line
+        | L<IRT Lexington Avenue Line|Map::Tube::NYC::Line::IRTLexingtonAvenue>
         | L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>.
 
 =back

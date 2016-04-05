@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDSixthAvenue;
 
-$Map::Tube::NYC::Line::INDSixthAvenue::VERSION   = '0.31';
+$Map::Tube::NYC::Line::INDSixthAvenue::VERSION   = '0.32';
 $Map::Tube::NYC::Line::INDSixthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDSixthAvenue - NYC Subway Map: IND Sixth Avenue Line.
 
 =head1 VERSION
 
-Version 0.31
+Version 0.32
 
 =head1 DESCRIPTION
 
@@ -43,7 +43,8 @@ NYC Subway Map: IND Sixth Avenue Line.
 
 =item * The station "West Fourth Street" is also part of L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>.
 
-=item * The station "14th Street" is also part of IRT Broadway Line.
+=item * The station "14th Street" is also part of IRT Broadway Line
+        | L<IRT Lexington Avenue Line|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
 
 =item * The station "Herald Square" is also part of BMT Broadway Line.
 

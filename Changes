@@ -1,5 +1,13 @@
 Revision history for Map::Tube::NYC
 
+0.32  Tue Apr 05 10:40:00 2016
+      - Added package Map::Tube::NYC::Line::IRTLexingtonAvenue
+      - Added map image for IRT Lexington Avenue line.
+      - Updated NYC Submap map image.
+      - Updated effected other line map image.
+      - Updated unit test t/00-load.t
+      - Updated map data w.r.t. "Grand Central" station.
+
 0.31  Fri Apr 01 16:15:00 2016
       - Fixed typo in the package name.
       - Updated test scripts.

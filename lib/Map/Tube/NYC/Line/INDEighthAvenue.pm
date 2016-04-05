@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::INDEighthAvenue;
 
-$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.31';
+$Map::Tube::NYC::Line::INDEighthAvenue::VERSION   = '0.32';
 $Map::Tube::NYC::Line::INDEighthAvenue::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::INDEighthAvenue - NYC Subway Map: IND Eighth Avenue Line.
 
 =head1 VERSION
 
-Version 0.31
+Version 0.32
 
 =head1 DESCRIPTION
 
@@ -59,20 +59,36 @@ NYC Subway Map: IND Eighth Avenue Line.
 
 =item * The station "West Fourth Street" is also part of L<IND Sixth Avenue Line|Map::Tube::NYC::Line::INDSixthAvenue>.
 
-=item * The station "Fulton Street" is also part of IRT Broadway Line |
-        IRT Lexington Avenue Line |
-        L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>.
+=item * The station "Fulton Street" is also part of IRT Broadway Line
+        | L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>
+        | L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>.
 
-=item * The station "Canal Street" is also part of L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>.
+=item * The station "Canal Street" is also part of L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>
+        | L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
 
 =item * The station "Chambers Street" is also part of L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>.
 
 =item * The station "Union Square" is also part of L<BMT Canarsie Line|Map::Tube::NYC::Line::BMTCanarsie>.
 
-=item * The station "59th Street" is also part of IRT Broadway Line.
+=item * The station "59th Street" is also part of IRT Broadway Line
+        | L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
 
-=item * The station "42nd Street" is also part of IRT Broadway Line |
-        L<IRT Flushing Line|Map::Tube::NYC::Line::IRTFlushing>.
+=item * The station "42nd Street" is also part of IRT Broadway Line
+        | L<IRT Flushing Line|Map::Tube::NYC::Line::IRTFlushing>.
+
+=item * The station "125th Street" is also part of L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
+
+=item * The station "116th Street" is also part of L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
+
+=item * The station "110th Street" is also part of L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
+
+=item * The station "103rd Street" is also part of L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
+
+=item * The station "96th Street" is also part of L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
+
+=item * The station "86th Street" is also part of L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
+
+=item * The station "33rd Street" is also part of L<IRT Lexington Avenue|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
 
 =back
 

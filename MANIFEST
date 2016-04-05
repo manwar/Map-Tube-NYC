@@ -7,6 +7,7 @@ lib/Map/Tube/NYC/Line/INDCrosstown.pm
 lib/Map/Tube/NYC/Line/IRTFlushing.pm
 lib/Map/Tube/NYC/Line/BMTCanarsie.pm
 lib/Map/Tube/NYC/Line/BMTNassauStreet.pm
+lib/Map/Tube/NYC/Line/IRTLexingtonAvenue.pm
 Makefile.PL
 LICENSE
 MANIFEST

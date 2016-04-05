@@ -1,6 +1,6 @@
 package Map::Tube::NYC::Line::IRTFlushing;
 
-$Map::Tube::NYC::Line::IRTFlushing::VERSION   = '0.31';
+$Map::Tube::NYC::Line::IRTFlushing::VERSION   = '0.32';
 $Map::Tube::NYC::Line::IRTFlushing::AUTHORITY = 'cpan:MANWAR';
 
 use 5.006;
@@ -12,7 +12,7 @@ Map::Tube::NYC::Line::IRTFlushing - NYC Subway Map: IRT Flushing Line.
 
 =head1 VERSION
 
-Version 0.31
+Version 0.32
 
 =head1 DESCRIPTION
 
@@ -51,7 +51,8 @@ NYC Subway Map: IRT Flushing Line.
 
 =item * The station "Court Square" is also part of L<IND Crosstown Line|Map::Tube::NYC::Line::INDCrosstown>.
 
-=item * The station "42nd Street" is also part of L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>.
+=item * The station "42nd Street" is also part of L<IND Eighth Avenue Line|Map::Tube::NYC::Line::INDEighthAvenue>
+        | L<IRT Lexington Avenue Line|Map::Tube::NYC::Line::IRTLexingtonAvenue>.
 
 =back
 
