@@ -1,6 +1,6 @@
 package Map::Tube::NYC;
 
-$Map::Tube::NYC::VERSION   = '0.32';
+$Map::Tube::NYC::VERSION   = '0.33';
 $Map::Tube::NYC::AUTHORITY = 'cpan:MANWAR';
 
 =head1 NAME
@@ -9,7 +9,7 @@ Map::Tube::NYC - Interface to the NYC Subway Map.
 
 =head1 VERSION
 
-Version 0.32
+Version 0.33
 
 =cut
 
@@ -45,7 +45,7 @@ given  nodes. It covers the following subway lines just yet:
 
 =item * L<BMT Nassau Street Line|Map::Tube::NYC::Line::BMTNassauStreet>
 
-=item * LIRT Lexington Avenue Line|Map::Tube::NYC::Line::IRTLexingtonAvenue>
+=item * L<IRT Lexington Avenue Line|Map::Tube::NYC::Line::IRTLexingtonAvenue>
 
 =back
 

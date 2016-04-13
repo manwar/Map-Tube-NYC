@@ -18,11 +18,11 @@
     <station id="HERALD-SQUARE"      name="Herald Square"      line="IND Sixth Avenue,BMT Broadway"                                         link="SA04,23rd-STREET"                           />
     <station id="14th-STREET"        name="14th Street"        line="IND Sixth Avenue,IRT Broadway,IRT Lexington Avenue"                    link="23rd-STREET,WEST-FOURTH-STREET,LA15,LA17"   />
     <station id="UNION-SQUARE"       name="Union Square"       line="IND Eighth Avenue,BMT Canarsie"                                        link="WEST-FOURTH-STREET,23rd-STREET,CS02,CS04"   />
-    <station id="WEST-FOURTH-STREET" name="West Fourth Street" line="IND Sixth Avenue,IND Eighth Avenue"                                    link="14th-STREET,SA09,UNION-SQUARE,EA26"         />
+    <station id="WEST-FOURTH-STREET" name="West Fourth Street" line="IND Sixth Avenue,IND Eighth Avenue"                                    link="14th-STREET,SA09,UNION-SQUARE,SPRING-STREET"/>
     <station id="FULTON-STREET"      name="Fulton Street"      line="IND Eighth Avenue,IRT Broadway,IRT Lexington Avenue,BMT Nassau Street" link="EA30,CHAMBERS-STREET,NS06,LA23,LA25"        />
     <station id="23rd-STREET"        name="23rd Street"        line="IND Sixth Avenue,IND Eighth Avenue,IRT Lexington Avenue"               link="HERALD-SQUARE,14th-STREET,UNION-SQUARE,EA22,LA13,LA15"/>
     <station id="CHAMBERS-STREET"    name="Chambers Street"    line="IND Eighth Avenue,BMT Nassau Street"                                   link="FULTON-STREET,CANAL-STREET"                 />
-    <station id="CANAL-STREET"       name="Canal Street"       line="IND Eighth Avenue,BMT Nassau Street,IRT Lexington Avenue"              link="CHAMBERS-STREET,EA26,NS02,LA19,LA21"        />
+    <station id="CANAL-STREET"       name="Canal Street"       line="IND Eighth Avenue,BMT Nassau Street,IRT Lexington Avenue"              link="CHAMBERS-STREET,SPRING-STREET,NS02,LA21"    />
     <station id="86th-STREET"        name="86th Street"        line="IND Eighth Avenue,IRT Lexington Avenue"                                link="EA17,96th-STREET,LA07"                      />
     <station id="125th-STREET"       name="125th Street"       line="IND Eighth Avenue,IRT Lexington Avenue"                                link="116th-STREET,EA10"                          />
     <station id="116th-STREET"       name="116th Street"       line="IND Eighth Avenue,IRT Lexington Avenue"                                link="110th-STREET,125th-STREET"                  />
@@ -31,6 +31,7 @@
     <station id="96th-STREET"        name="96th Street"        line="IND Eighth Avenue,IRT Lexington Avenue"                                link="86th-STREET,103rd-STREET"                   />
     <station id="33rd-STREET"        name="33rd Street"        line="IRT Flushing,IRT Lexington Avenue"                                     link="FL13,FL15,42nd-STREET,LA13"                 />
     <station id="GRAND-CENTRAL"      name="Grand Central"      line="IRT Flushing, IRT Lexington Avenue"                                    link="FL18,FL20,42nd-STREET"                      />
+    <station id="SPRING-STREET"      name="Spring Street"      line="IND Eighth Avenue,IRT Lexington Avenue"                                link="LA18,CANAL-STREET,WEST-FOURTH-STREET"       />
 
     <!-- http://en.wikipedia.org/wiki/IND_Eighth_Avenue_Line -->
     <station id="EA01" name="207th Street"                    line="IND Eighth Avenue" link="EA02"                     />
@@ -47,7 +48,7 @@
     <station id="EA18" name="72nd Street"                     line="IND Eighth Avenue" link="59th-STREET,EA17"         />
     <station id="EA20" name="50th Street"                     line="IND Eighth Avenue" link="42nd-STREET,59th-STREET"  />
     <station id="EA22" name="34th Street"                     line="IND Eighth Avenue" link="23rd-STREET,42nd-STREET"  />
-    <station id="EA26" name="Spring Street"                   line="IND Eighth Avenue" link="CANAL-STREET,WEST-FOURTH-STREET"/>
+
     <station id="EA30" name="High Street"                     line="IND Eighth Avenue" link="FULTON-STREET"            />
 
     <!-- http://en.wikipedia.org/wiki/IND_Sixth_Avenue_Line -->
@@ -116,8 +117,7 @@
     <station id="LA13" name="28th Street"                     line="IRT Lexington Avenue" link="33rd-STREET,23rd-STREET"/>
     <station id="LA15" name="18th Street"                     line="IRT Lexington Avenue" link="23rd-STREET,14th-STREET"/>
     <station id="LA17" name="Astor Place"                     line="IRT Lexington Avenue" link="14th-STREET,LA18"       />
-    <station id="LA18" name="Bleecker Street"                 line="IRT Lexington Avenue" link="LA17,LA19"              />
-    <station id="LA19" name="Spring Street"                   line="IRT Lexington Avenue" link="LA18,CANAL-STREET"      />
+    <station id="LA18" name="Bleecker Street"                 line="IRT Lexington Avenue" link="LA17,SPRING-STREET"     />
     <station id="LA21" name="Worth Street"                    line="IRT Lexington Avenue" link="CANAL-STREET,LA22"      />
     <station id="LA22" name="Brooklyn Bridge"                 line="IRT Lexington Avenue" link="LA21,LA23"              />
     <station id="LA23" name="City Hall"                       line="IRT Lexington Avenue" link="LA22,FULTON-STREET"     />

@@ -1,5 +1,10 @@
 Revision history for Map::Tube::NYC
 
+0.33  Wed Apr 13 12:10:00 2016
+      - Added test script for Line IRT Lexington Avenue.
+      - Fixed typo in the pod document.
+      - Updated map data w.r.t. "Spring Street" station.
+
 0.32  Tue Apr 05 10:40:00 2016
       - Added package Map::Tube::NYC::Line::IRTLexingtonAvenue
       - Added map image for IRT Lexington Avenue line.

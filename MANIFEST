@@ -25,3 +25,4 @@ t/ind-crosstown.t
 t/irt-flushing.t
 t/bmt-canarsie.t
 t/bmt-nassau-street.t
+t/irt-lexington-avenue.t
