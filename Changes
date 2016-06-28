@@ -1,5 +1,9 @@
 Revision history for Map::Tube::NYC
 
+0.34  Tue Jun 28 10:20:00 2016
+      - Upgraded to use Map::Tube v3.15.
+      - Consolidated routes testing functions using method ok_map_routes().
+
 0.33  Wed Apr 13 12:10:00 2016
       - Added test script for Line IRT Lexington Avenue.
       - Fixed typo in the pod document.

@@ -16,13 +16,6 @@ README
 t/00-load.t
 t/manifest.t
 t/pod.t
-t/generic.t
+t/map-tube-nyc.t
 t/meta-yml.t
 t/meta-json.t
-t/ind-eighth-avenue.t
-t/ind-sixth-avenue.t
-t/ind-crosstown.t
-t/irt-flushing.t
-t/bmt-canarsie.t
-t/bmt-nassau-street.t
-t/irt-lexington-avenue.t
