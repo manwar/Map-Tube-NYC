@@ -14,8 +14,8 @@ MANIFEST
 MANIFEST.SKIP
 README
 t/00-load.t
-t/manifest.t
-t/pod.t
 t/map-tube-nyc.t
-t/meta-yml.t
-t/meta-json.t
+xt/manifest.t
+xt/pod.t
+xt/meta-yml.t
+xt/meta-json.t
