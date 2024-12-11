@@ -1,15 +1,39 @@
 <tube name="NYC Subway">
   <lines>
-      <line id="IND Eighth Avenue"    name="IND Eighth Avenue"    color="#000080" /> <!-- Blue   -->
-      <line id="IND Sixth Avenue"     name="IND Sixth Avenue"     color="#FF4F00" /> <!-- Orange -->
-      <line id="IND Crosstown"        name="IND Crosstown"        color="#006400" /> <!-- Green  -->
-      <line id="BMT Canarsie"         name="BMT Canarsie"         color="#2F4F4F" /> <!-- Gray   -->
-      <line id="BMT Nassau Street"    name="BMT Nassau Street"    color="#550000" /> <!-- Brown  -->
-      <line id="BMT Broadway"         name="BMT Broadway"         color="#FFFF00" /> <!-- Yellow -->
-      <line id="IRT Broadway"         name="IRT Broadway"         color="#8B0000" /> <!-- Red    -->
-      <line id="IRT Lexington Avenue" name="IRT Lexington Avenue" color="#006400" /> <!-- Green  -->
-      <line id="IRT Flushing"         name="IRT Flushing"         color="#871F78" /> <!-- Purple -->
-  </lines>
+  	  <line id="A" name="A" color="#0039A6"/>
+  	  <line id="C" name="C" color="#0039A6"/>
+  	  <line id="E" name="E" color="#0039A6"/>
+
+  	  <line id="B" name="B" color="#FF6319"/>
+  	  <line id="D" name="D" color="#FF6319"/>
+  	  <line id="F" name="F" color="#FF6319"/>
+  	  <line id="M" name="M" color="#FF6319"/>
+
+  	  <line id="G" name="G" color="#6CBE45"/>
+
+  	  <line id="J" name="J" color="#996633"/>
+  	  <line id="Z" name="Z" color="#996633"/>
+
+  	  <line id="L" name="L" color="#A7A9AC"/>
+
+  	  <line id="N" name="N" color="#FCCC0A"/>
+   	  <line id="Q" name="Q" color="#FCCC0A"/>
+   	  <line id="R" name="R" color="#FCCC0A"/>
+   	  <line id="W" name="W" color="#FCCC0A"/>
+
+   	  <line id="S" name="S (Midtown)" color="#808183"/>
+   	  <line id="S-Jamaica-Bay" name="S (Jamaica Bay)" color="#808183"/>
+
+   	  <line id="Staten-Island" name="Staten Island" color="#0039A6"/>
+
+	  <line id="1" name="1" color="#EE352E"/>
+	  <line id="2" name="2" color="#EE352E"/>
+	  <line id="3" name="3" color="#EE352E"/>
+
+	  <line id="4" name="4" color="#00933C"/>
+	  <line id="5" name="5" color="#00933C"/>
+	  <line id="6" name="3" color="#00933C"/>
+</lines>
 
   <stations>
     <station id="COURT-SQUARE"       name="Court Square"       line="IND Crosstown,IRT Flushing"                                            link="FL15,FL17,CT02"                             />
