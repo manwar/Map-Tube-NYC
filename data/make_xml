@@ -1,0 +1,219 @@
+package # Hide from PAUSE
+	Map::Tube::NYC::XML;
+
+use v5.26;
+use utf8;
+use open qw(:std :utf8);
+use warnings;
+use strict;
+use experimental qw(signatures);
+
+use FindBin qw($RealBin);
+
+run() unless caller();
+
+sub run {
+	my $path = fetch_data();
+	my $tube = start_xml();
+
+	my $stations = $tube->at('stations');
+
+	add_stations( $path, $stations );
+
+	say $tube->to_pretty_string;
+	}
+
+sub add_stations ($path, $stations) {
+	state $rc = require Text::CSV_XS;
+
+	my $csv = Text::CSV_XS->new({ binary => 1, auto_diag => 1 });
+	open my $fh, "<:encoding(utf8)", $path or die "could not open $path: $!";
+
+	$csv->header ($fh);
+	my @keep = ( 'gtfs stop id', 'station id', 'borough', 'stop name', 'line', 'daytime routes' );
+
+#     <station id="COURT-SQUARE"       name="Court Square"       line="IND Crosstown,IRT Flushing"                                            link="FL15,FL17,CT02"                             />
+
+	my %map;
+	while( my $row = $csv->getline_hr($fh) ) {
+		adjust_lines( $row );
+
+		my %hash = (
+			id   => $row->{'station id'},
+			name => $row->{'stop name'},
+			line => join( ',', split /\s+/, $row->{'daytime routes'}),
+			);
+
+		$stations->append_content( Mojo::DOM->new_tag( 'station', %hash ) );
+		}
+	close $fh;
+
+
+	}
+
+sub fetch_data {
+	state $rc = require Mojo::UserAgent;
+	my $path = data_path();
+	return $path if -e $path;
+
+	Mojo::UserAgent->new->get( url() )->res->save_to( $path ) ? $path : undef;
+	}
+
+
+sub data_path {
+	state $rc = require Mojo::File;
+	my $path = Mojo::File->new( $RealBin )->child( 'MTA_Subway_Stations.csv' );
+	}
+
+sub url { 'https://data.ny.gov/api/views/39hk-dx4f/rows.csv?accessType=DOWNLOAD' }
+
+
+
+sub lines {
+	my @lines = (
+		{ '#0039A6' => [ qw(A-Ozone-Park A-Far-Rockaway A-Rockaway-Park C E SIR) ] },
+		{ '#FF6319' => [ qw(B D F M) ] },
+		{ '#6CBE45' => [ qw(G) ] },
+		{ '#996633' => [ qw(J Z) ] },
+		{ '#A7A9AC' => [ qw(L) ] },
+		{ '#FCCC0A' => [ qw(N Q R W) ] },
+		{ '#808183' => [ qw(S S-Franklin-Extension S-Jamaica-Bay) ] },
+		{ '#EE352E' => [ qw(1 2 3) ] },
+		{ '#00933C' => [ qw(4 5-Neried 5-Eastchester 5-Diamond 6 6-Diamond) ] },
+		);
+	}
+
+sub adjust_lines ($row) {
+	state %map = (
+		A => [qw(A-Ozone-Park A-Far-Rockaway A-Rockaway-Park)],
+		5 => [qw(5-Neried 5-Eastchester 5-Diamond)],
+		6 => [qw(6 6-Diamond)],
+		S => [qw(S S-Franklin-Extension S-Jamaica-Bay)],
+		);
+
+	state %Only = (
+		'5-Neried'             => [417..425],
+		'5-Eastchester'        => [442..446],
+		'A-Ozone-Park' => [ 193..195 ],
+		'A-Far-Rockaway' => [204..209],
+		'A-Rockaway-Park' => [200..203],
+		'S-Jamaica-Bay'        => [199..203],
+		'S'                    => [468..469],
+		'S-Franklin-Extension' => [ qw(42 139 141 142) ],
+		);
+
+	state %Excludes = do {
+		my %h = (
+			'5-Neried'             => [ $Only{'5-Eastchester'}->@* ],
+			'5-Eastchester'        => [ $Only{'5-Neried'}->@* ],
+			'5-Diamond'            => [ $Only{'5-Neried'}->@*, 427..433],
+			'6-Diamond'            => [ 367..370, 372..376 ],
+			'A-Ozone-Park'         => [ 196..199, map { $_->@* } @Only{qw(A-Far-Rockaway A-Rockaway-Park)} ],
+			'A-Far-Rockaway'       => [ map { $_->@* } @Only{qw(A-Ozone-Park A-Rockaway-Park)} ],
+			'A-Rockaway-Park'      => [ map { $_->@* } @Only{qw(A-Ozone-Park A-Far-Rockaway)} ],
+			'S'                    => [ map { $_->@* } @Only{qw(S-Franklin-Extension S-Jamaica-Bay)} ],
+			'S-Franklin-Extension' => [ map { $_->@* } @Only{qw(S S-Jamaica-Bay)} ],
+			'S-Jamaica-Bay'        => [ map { $_->@* } @Only{qw(S S-Franklin-Extension)} ],
+			);
+
+		foreach my $key ( keys %h ) {
+			$h{$key} = { map { $_, 1 } $h{$key}->@* };
+			}
+
+		%h;
+		};
+
+	my $id = $row->{'station id'};
+
+	my $start = join ' ', sort split /\s+/, $row->{'daytime routes'};
+
+	my %stops = map { $_ => 1 } split /\s+/, $row->{'daytime routes'};
+	foreach my $line ( keys %map ) {
+		next unless exists $stops{$line};
+		delete $stops{$line};
+		my @t = $map{$line}->@*;
+		@stops{ @t } = (1) x @t;
+		foreach my $t ( @t ) {
+			delete $stops{$t} if exists $Excludes{$t}{$id};
+			}
+		}
+
+	$row->{'daytime routes'} = join ' ', sort keys %stops;
+
+	if( $start ne $row->{'daytime routes'} ) {
+		printf STDERR "%d %s (%s) -> (%s)\n", $row->{'station id'}, $row->{'stop name'}, $start, $row->{'daytime routes'};
+		}
+
+	return $row->{'station id'};
+	}
+
+sub start_xml () {
+	state $rc = require Mojo::DOM;
+	my $root = 'tube';
+
+	my $tube = Mojo::DOM
+		->with_roles('+PrettyPrinter')
+		->new_tag($root, name => 'New York Metropolitan Transit Authority (MTA)' );
+
+	$tube->at($root)->append_content( new_tag($_) ) for qw(lines stations);
+
+	my $lines_node = $tube->at('lines');
+
+	foreach my $h ( lines() ) {
+		my($color, $lines) = $h->%*;
+
+		foreach my $line ( $lines->@* ) {
+			my( $letter, $alias ) = split /\|/, $line;
+			my $name = $alias // $letter;
+			my $id = $name =~ s/\W+/-/gr;
+			$lines_node->append_content( Mojo::DOM->new_tag( 'line', id => $id, name => $name, color => $color ) );
+			}
+		}
+	$tube->at($root);
+	}
+
+sub new_tag ( $tag, $content = undef ) { Mojo::DOM->new_tag($tag, $content // '' ) }
+
+__END__
+
+<tube name="NYC Subway">
+	<lines>
+		<line id="A" name="A" color="#0039A6"/>
+		<line id="C" name="C" color="#0039A6"/>
+		<line id="E" name="E" color="#0039A6"/>
+
+		<line id="B" name="B" color="#FF6319"/>
+		<line id="D" name="D" color="#FF6319"/>
+		<line id="F" name="F" color="#FF6319"/>
+		<line id="M" name="M" color="#FF6319"/>
+
+		<line id="G" name="G" color="#6CBE45"/>
+
+		<line id="J" name="J" color="#996633"/>
+		<line id="Z" name="Z" color="#996633"/>
+
+		<line id="L" name="L" color="#A7A9AC"/>
+
+		<line id="N" name="N" color="#FCCC0A"/>
+		<line id="Q" name="Q" color="#FCCC0A"/>
+		<line id="R" name="R" color="#FCCC0A"/>
+		<line id="W" name="W" color="#FCCC0A"/>
+
+		<line id="S" name="S (Midtown)" color="#808183"/>
+		<line id="S-Franklin" name="S (Franklin Extension)" color="#808183"/>
+		<line id="S-Jamaica-Bay" name="S (Jamaica Bay)" color="#808183"/>
+
+		<line id="SIR" name="Staten Island" color="#0039A6"/>
+
+		<line id="1" name="1" color="#EE352E"/>
+		<line id="2" name="2" color="#EE352E"/>
+		<line id="3" name="3" color="#EE352E"/>
+
+		<line id="4" name="4" color="#00933C"/>
+		<line id="5" name="5" color="#00933C"/>
+		<line id="6" name="3" color="#00933C"/>
+	</lines>
+
+}
+
+__END__
